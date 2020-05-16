@@ -9,9 +9,12 @@
     "@testing-library/user-event": "^7.2.1",
     "install": "^0.13.0",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "rnpm": "^1.9.0"
+    "rnpm": "^1.9.0",
+    "style-it": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
