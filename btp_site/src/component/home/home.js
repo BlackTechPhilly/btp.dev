@@ -11,7 +11,7 @@ export class Home extends Component {
     render() {
         return(
             <div>
-
+                <h1>Welcome To Black Tech Philly!</h1>
             </div>
         );
     }

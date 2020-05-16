@@ -1,6 +1,8 @@
 import React, { Component } from 'react'; 
 
-import ContactForm from './contactForm';
+import logo from './btp_logo_1.jpg';
+
+
 
 export class Contact extends Component {
 
@@ -11,7 +13,8 @@ export class Contact extends Component {
 
     render() {
         return(
-            <div>
+            <div styles={{ backgroundImage: {logo} }}>
+                <h3> background test </h3> 
 
             </div>
         );
