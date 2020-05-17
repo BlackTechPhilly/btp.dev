@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import { Tab, Tabs } from "react-bootstrap";
-import { MemberForm } from "./forms/MemberForm";
+import MemberForm from "./forms/MemberForm";
+import SponsorForm from "./forms/SponsorForm";
 
 class Connect extends Component {
   render() {
     return (
-      <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-        <Tab eventKey="home" title="Sponsors">
+      <Tabs id="uncontrolled-tab-example">
+        <Tab eventKey="Members" title="Become a Member">
           <MemberForm />
         </Tab>
 
-        <Tab eventKey="profile" title="Members">
+        <Tab eventKey="Sponsors" title="Become a Sponsor">
           <SponsorForm />
         </Tab>
       </Tabs>

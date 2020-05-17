@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "DINCondensed-Bold";
+  src: local("DINCondensed-Bold"),
+    url("../../fonts/DINCondensed-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Eina01-Regular";
+  src: local("Eina01-Regular"),
+    url("../../fonts/Eina01-Regular.ttf") format("truetype");
+}
+.lead {
+  color: white;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 1px;
+  float: right;
+}
+.lead:hover {
+  color: black;
+  opacity: 1;
+}
+
+.primeText {
+  font-size: 50px;
+}
+.subText {
+  line-height: 10px;
+  font-size: 20px;
+  font-family: "Eina01-Regular";
+}
+
+.links {
+  font-size: 20px;
+  margin-right: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.links:hover {
+  opacity: 1;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 770px) {
+  .links {
+    font-size: 20px;
+    margin-right: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  .links:hover {
+    opacity: 1;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .primeText {
+    font-size: 33px;
+  }
+  .subText {
+    line-height: 10px;
+    font-size: 12px;
+    font-family: "Eina01-Regular";
+  }
+}
