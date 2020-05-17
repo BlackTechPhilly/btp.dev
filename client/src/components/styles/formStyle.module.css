@@ -1,0 +1,9 @@
+.member:link.active {
+  color: red !important;
+  background-color: orange !important;
+}
+
+.member:active {
+  color: red !important;
+  background-color: yellow !important;
+}
