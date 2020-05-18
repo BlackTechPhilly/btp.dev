@@ -1,6 +1,8 @@
 import React from "react";
 import { Jumbotron, Container } from "react-bootstrap";
 
+import TPP from './ThreePointPlan'; 
+
 const Mission = () => (
   <div>
     <Jumbotron fluid>
@@ -13,6 +15,8 @@ const Mission = () => (
         </p>
       </Container>
     </Jumbotron>
+
+    <TPP />
   </div>
 );
 
