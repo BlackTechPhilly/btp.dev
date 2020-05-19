@@ -2,60 +2,28 @@ import React, { Component } from 'react';
 
 import { Container, Row, Col } from 'react-bootstrap'; 
 
+import Inclusion from './Inclusion';
+import Support from './Support';
+import Purpose from './Purpose'; 
+
 
 export class TPP extends Component {
 
     constructor(props) {
         super(props)
-    
-    }
-    
 
-    componentDidMount () {
-        const element = document.querySelector(".circular_reveal");
-        const inner = document.querySelector(".circular_reveal_content");
-
-        const easing = 0.3; 
-        const outScale = 0.6; 
-        const inScale = 1;
-
-        let targetScale = outScale; 
-        let elementScale = targetScale; 
-        let innerScale = 1 / elementScale; 
-
-        element.addEventListener("pointerover", () => {
-            targetScale = inScale; 
-        })
-
-        element.addEventListener("pointerout", () => {
-            targetScale = outScale; 
-        })
-
-          const update = () => {
-              elementScale += (targetScale - elementScale) * easing; 
-              innerScale = 1 / elementScale; 
-
-              element.style.transform = `scale(${elementScale})`; 
-              inner.style.transform = `scale(${innerScale})`;
-
-              requestAnimationFrame(update); 
-          }
-
-          requestAnimationFrame(update); 
-
-    }    
+    } 
 
 
     render () {
         return(
             <div>
                 <Container>
-                    <Row>
+                    <h1> Our Three Point Plan</h1>
+                    <Row >
                         <Col>
-                            <div className="circular_reveal">
-                                <div className="circular_reveal_content">
-                                    <img src={require ("../assets/images/btp_1.jpg")} alt="Inclusion"/>
-                                </div>
+                            <div>
+                                <Inclusion />
                             </div>
                             <p>
                             BTP is an inclusive space for Black tech professionals to network and build bonds, 
@@ -64,10 +32,8 @@ export class TPP extends Component {
                             </p>
                         </Col>
                         <Col>
-                            <div className="circular_reveal">
-                                <div className="circular_reveal_content">
-                                    <img src={require ("../assets/images/btp_2.jpg")} alt="Support"/>
-                                </div>
+                            <div>
+                                <Support /> 
                             </div>
                             <p>
                             BTP is a program dedicated to solidarity through learning. We strive to help our members reach 
@@ -76,10 +42,8 @@ export class TPP extends Component {
                             </p>     
                         </Col>
                         <Col>
-                            <div className="circular_reveal">
-                                <div className="circular_reveal_content">
-                                    <img src={require ("../assets/images/btp_3.jpg")} alt="Purpose"/>
-                                </div>
+                            <div>
+                                <Purpose />
                             </div>
                             <p>
                             BTP’s primary mission is to get more Black people into professional tech roles. With our projects and related 
@@ -87,6 +51,7 @@ export class TPP extends Component {
                             projects and experience but help them land employment opportunities through our relationships with employers across 
                             the city and surrounding areas.
                             </p>
+                            
                         </Col>
                     </Row>
                 </Container>

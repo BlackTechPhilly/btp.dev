@@ -1,7 +1,7 @@
 import React from "react";
 import { Jumbotron, Container } from "react-bootstrap";
 
-import TPP from './ThreePointPlan'; 
+import TPP from './TPP/ThreePointPlan'; 
 
 const Mission = () => (
   <div>
