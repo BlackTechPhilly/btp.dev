@@ -14,6 +14,8 @@ export class TPP extends Component {
 
     } 
 
+    //fix the images so they're more centered
+
 
     render () {
         return(
@@ -21,7 +23,7 @@ export class TPP extends Component {
                 <Container>
                     <h1> Our Three Point Plan</h1>
                     <Row >
-                        <Col>
+                        <Col style={{textAlign: 'center'}}>
                             <div>
                                 <Inclusion />
                             </div>
@@ -31,7 +33,7 @@ export class TPP extends Component {
                             orientations and levels of career experiences. No code switching necessary here- Just code. 
                             </p>
                         </Col>
-                        <Col>
+                        <Col  style={{textAlign: 'center'}}>
                             <div>
                                 <Support /> 
                             </div>
@@ -41,7 +43,7 @@ export class TPP extends Component {
                             and career oriented programming, as well as provide real world experience via coding projects.
                             </p>     
                         </Col>
-                        <Col>
+                        <Col  style={{textAlign: 'center'}}>
                             <div>
                                 <Purpose />
                             </div>

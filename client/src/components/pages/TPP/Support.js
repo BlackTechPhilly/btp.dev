@@ -41,7 +41,7 @@ export class Support extends Component  {
             <div id="support">
                 <div className="circular_reveal_s">
                     <div className="circular_reveal_content_s">
-                        <img src={require ('../../assets/images/btp_2.jpg')} alt="Support"/>
+                        <img src={require ('../../assets/images/support.jpg')} alt="Support"/>
                     </div>
                 </div>
             </div>

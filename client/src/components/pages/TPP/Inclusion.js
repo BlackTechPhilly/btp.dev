@@ -41,7 +41,7 @@ export class Inclusion extends Component  {
             <div id="inclusion">
                 <div className="circular_reveal">
                     <div className="circular_reveal_content">
-                        <img src={require ('../../assets/images/btp_1.jpg')} alt="Inclusion"/>
+                        <img src={require ('../../assets/images/inclusion.jpg')} alt="Inclusion"/>
                     </div>
                 </div>
             </div>

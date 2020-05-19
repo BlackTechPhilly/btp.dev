@@ -41,7 +41,7 @@ export class Purpose extends Component  {
             <div id="purpose">
                 <div className="circular_reveal_p">
                     <div className="circular_reveal_content_p">
-                        <img src={require ('../../assets/images/btp_3.jpg')} alt="Purpose"/>
+                        <img src={require ('../../assets/images/purpose.jpg')} alt="Purpose"/>
                     </div>
                 </div>
             </div>

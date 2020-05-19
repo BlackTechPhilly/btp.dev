@@ -10,8 +10,8 @@ const Mission = () => (
         <h1>Mission</h1>
         <p>
         Black Tech Philly is a predominantly virtual, inclusive space where Black tech professionals can discuss technology, 
-                        share knowledge and experiences, find industry related opportunities, and work collaboratively on open source, 
-                        community driven projects for the benefit of the denizens of Philadelphia and the surrounding areas.
+        share knowledge and experiences, find industry related opportunities, and work collaboratively on open source, 
+        community driven projects for the benefit of the denizens of Philadelphia and the surrounding areas.
         </p>
       </Container>
     </Jumbotron>
