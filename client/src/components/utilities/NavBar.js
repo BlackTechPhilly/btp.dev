@@ -2,39 +2,41 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import Logo from "../assets/images/White_transparent_BTP_Logo.png";
+import style from "../styles/navStyle.module.css";
 
 class NavBar extends React.Component {
   render() {
     return (
       <Navbar
+        className={style.navbar}
         collapseOnSelect
         expand="lg"
-        variant="dark"
         style={{
           backgroundColor: "#008be0",
           height: "auto",
+          borderRadius: "25px",
+          margin: "10px",
         }}
       >
         <Navbar.Brand style={{ fontSize: "25px" }}>
-          <img
-            src={Logo}
-            style={{
-              height: "100px",
-              width: "100px",
-              marginRight: "1px",
-              padding: "1px",
-            }}
-          />
+          <img src={Logo} className={style.logo} alt="Black_Tech_Philly_Logo" />
 
-          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-            Black Tech Philly
+          <Link
+            to="/"
+            className={style.lead}
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            <h1 className={style.primeText}>Black Tech Philly</h1>
+            <h2 className={style.subText}>No code switching- Just code.</h2>
           </Link>
         </Navbar.Brand>
 
-        <Navbar.Toggle areia-controls="responsive-navbar-nav" />
+        <Navbar.Toggle areia-controls="basic-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link>
+            <Nav.Link className={style.links}>
               <Link
                 to="/mission"
                 style={{ color: "white", textDecoration: "none" }}
@@ -43,7 +45,7 @@ class NavBar extends React.Component {
               </Link>
             </Nav.Link>
 
-            <Nav.Link>
+            <Nav.Link className={style.links}>
               <Link
                 to="codeofconduct"
                 style={{ color: "white", textDecoration: "none" }}
@@ -52,7 +54,7 @@ class NavBar extends React.Component {
               </Link>
             </Nav.Link>
 
-            <Nav.Link>
+            <Nav.Link className={style.links}>
               <Link
                 to="connect"
                 style={{ color: "white", textDecoration: "none" }}

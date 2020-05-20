@@ -8,6 +8,8 @@ import Mission from "./components/pages/Mission";
 import CodeOfConduct from "./components/pages/CodeOfConduct";
 import Connect from "./components/pages/Connect";
 
+import Content from "./components/pages/content";
+
 const AppRouter = () => (
   <div>
     <NavBar />
@@ -15,6 +17,9 @@ const AppRouter = () => (
     <Route exact path="/mission" component={Mission} />
     <Route exact path="/codeofconduct" component={CodeOfConduct} />
     <Route exact path="/connect" component={Connect} />
+
+    {/* Test route for JSON*/}
+    <Route exact path="/content" component={Content} />
   </div>
 );
 
