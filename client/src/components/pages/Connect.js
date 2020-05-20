@@ -5,22 +5,40 @@ import SponsorForm from "./forms/SponsorForm";
 import style from "../styles/formStyle.module.css";
 
 class Connect extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+  // doSomthing = (eventKey) => {
+  //   // alert(`selected ${eventKey}`);
+  //   // this.setState = { active: true };
+  //   this.setState({
+  //     activeTab: selectedTab,
+  //   });
+  // };
+
   render() {
     return (
-      <Tabs id="uncontrolled-tab-example">
+      <Tabs
+        className={style.tabHeader}
+        onSelect={this.handleSelect}
+        // activeKey={this.state.activeTab}
+        // onSelect={this.doSomthing}
+      >
         <Tab
-          eventKey="onSelect"
+          style={{}}
+          eventKey={1}
           title="Become a Member"
           tabClassName={style.member}
-          onSelect
+          activeKey="1"
         >
           <MemberForm />
         </Tab>
-
         <Tab
-          eventKey="Sponsors"
+          eventKey={2}
           title="Become a Sponsor"
-          tabClassName="sponsor"
+          tabClassName={style.sponsor}
+          activeKey="2"
         >
           <SponsorForm />
         </Tab>
@@ -28,4 +46,5 @@ class Connect extends Component {
     );
   }
 }
+
 export default Connect;

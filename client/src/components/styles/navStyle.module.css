@@ -9,24 +9,35 @@
   src: local("Eina01-Regular"),
     url("../../fonts/Eina01-Regular.ttf") format("truetype");
 }
+
+.logo {
+  height: 150px;
+  width: 150px;
+  margin-right: 0px;
+  padding: 0px;
+  float: left;
+}
+
 .lead {
+  margin-top: 10%;
   color: white;
   transition: 0.3s;
   text-align: center;
   line-height: 1px;
   float: right;
 }
+
 .lead:hover {
   color: black;
   opacity: 1;
 }
 
 .primeText {
-  font-size: 50px;
+  font-size: 160%;
 }
 .subText {
-  line-height: 10px;
-  font-size: 20px;
+  line-height: 1px;
+  font-size: 65%;
   font-family: "Eina01-Regular";
 }
 
@@ -44,12 +55,16 @@
   transform: scale(1.5);
 }
 
-@media only screen and (max-width: 770px) {
+#responsive-navbar-nav {
+  align-content: center;
+}
+
+@media only screen and (max-width: 950px) {
   .links {
     font-size: 20px;
     margin-right: 50px;
     opacity: 0.6;
-    transition: 0.3s;
+    transition: 0;
   }
   .links:hover {
     opacity: 1;
@@ -57,13 +72,8 @@
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-
-  .primeText {
-    font-size: 33px;
-  }
-  .subText {
-    line-height: 10px;
-    font-size: 12px;
-    font-family: "Eina01-Regular";
+  .logo {
+    height: 0;
+    width: 0;
   }
 }

@@ -5,4 +5,4 @@ const router = express.Router();
 
 router.post("/sendMsg", sendMsg);
 
-modules.exports = router;
+module.exports = router;

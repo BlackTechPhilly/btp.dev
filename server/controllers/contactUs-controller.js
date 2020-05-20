@@ -1,9 +1,7 @@
 // Dependencies
-const sgMail = require("@sendgrid/mail");
 //( Email client)
-
+const sgMail = require("@sendgrid/mail");
 const dotenv = require("dotenv");
-
 dotenv.config();
 
 exports.sendMsg = (req, res) => {
@@ -15,13 +13,13 @@ exports.sendMsg = (req, res) => {
 
   let toString = to.toString();
   let fromString = from.toString();
-  let subString = subject.toString();
+  let subjectString = subject.toString();
   let textString = html.toString();
 
   const msg = {
     to: toString,
     from: fromString,
-    subject: subString,
+    subject: subjectString,
     html: textString,
   };
 

@@ -19,16 +19,7 @@ class NavBar extends React.Component {
         }}
       >
         <Navbar.Brand style={{ fontSize: "25px" }}>
-          <img
-            src={Logo}
-            style={{
-              height: "100px",
-              width: "100px",
-              marginRight: "1px",
-              padding: "1px",
-              float: "left",
-            }}
-          />
+          <img src={Logo} className={style.logo} alt="Black_Tech_Philly_Logo" />
 
           <Link
             to="/"
@@ -42,7 +33,7 @@ class NavBar extends React.Component {
           </Link>
         </Navbar.Brand>
 
-        <Navbar.Toggle areia-controls="responsive-navbar-nav" />
+        <Navbar.Toggle areia-controls="basic-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link className={style.links}>

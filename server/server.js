@@ -1,6 +1,6 @@
 // Dependencies
 const express = require("express");
-const morgan = require("morgan");
+// const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const cors = require("cors");
@@ -11,10 +11,10 @@ dotenv.config();
 const app = express();
 
 // Routes
-const contactUs = require("./");
+const contactUs = require("./routes/contactUs-route");
 
 // Middleware
-app.use("morgan");
+// app.use(morgan());
 app.use(cors());
 app.use(bodyParser.json());
 app.use("/", contactUs);
