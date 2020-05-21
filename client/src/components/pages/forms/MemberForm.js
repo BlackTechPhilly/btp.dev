@@ -46,23 +46,10 @@ class MemberForm extends Component {
   };
   contactForm = (name, from, text, subject) => (
     <div>
+      <h2 style={{ textAlign: "center", color: "grey" }}>
+        For Prospective Members
+      </h2>
       <div>
-        <h1 style={{ textAlign: "center", padding: "20px" }}>
-          We're here to help
-        </h1>
-        <p
-          style={{
-            textAlign: "center",
-            fontSize: "20px",
-            fontFamily: "Eina01-Regular",
-            padding: "4px",
-          }}
-        >
-          {" "}
-          Interested in becoming a member or just have a general question?
-          Please complete the form below and we'll reach back out to you very
-          soon.
-        </p>
         <Form className={style.formMain}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label style={{ marginLeft: "10px" }}></Form.Label>
