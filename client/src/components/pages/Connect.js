@@ -20,7 +20,7 @@ class Connect extends Component {
   render() {
     return (
       <div>
-        <Jumbotron fluid>
+        <Jumbotron fluid style={{ margin: "10px" }}>
           <Container>
             <h1 style={{ textAlign: "center" }}>Connect with Us</h1>
             <p

@@ -3,7 +3,7 @@ import { Jumbotron, Container } from "react-bootstrap";
 
 const CodeOfConduct = () => (
   <div>
-    <Jumbotron fluid>
+    <Jumbotron fluid style={{ margin: "10px" }}>
       <Container>
         <h1 style={{ textAlign: "center" }}>Code of Conduct</h1>
         <h3
