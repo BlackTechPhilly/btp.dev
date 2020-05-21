@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
 import style from "../../styles/formStyle.module.css";
-import { sendMsg } from "../../utilities/API";
+import { sendMsg } from "../../../API";
 
 class MemberForm extends Component {
   constructor() {
