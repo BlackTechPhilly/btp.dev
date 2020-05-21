@@ -47,22 +47,15 @@ class SponsorForm extends Component {
   contactForm = (name, from, text, subject) => (
     <div>
       <div>
-        <h1 style={{ textAlign: "center", padding: "20px" }}>
-          Let's Build Together
-        </h1>
-        <p
+        <h3
           style={{
             textAlign: "center",
-            fontSize: "20px",
-            fontFamily: "Eina01-Regular",
-            padding: "4px",
+            color: "grey",
+            padding: "10px",
           }}
         >
-          {" "}
-          Interested in becoming a Sponsor or just have a general question?
-          Please complete the form below and we'll reach back out to you very
-          soon.
-        </p>
+          Prospective Sponsors
+        </h3>
         <Form className={style.formMain}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label style={{ marginLeft: "10px" }}></Form.Label>
