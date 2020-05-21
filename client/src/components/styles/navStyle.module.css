@@ -42,11 +42,7 @@
 }
 
 .links {
-<<<<<<< HEAD
-  font-size: 20px;
-=======
   font-size: 25px;
->>>>>>> dev
   margin-right: 50px;
   opacity: 0.6;
   transition: 0.3s;
