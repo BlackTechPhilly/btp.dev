@@ -46,7 +46,6 @@ class SponsorForm extends Component {
   };
   contactForm = (name, from, text, subject) => (
     <div>
-<<<<<<< HEAD
       <div>
         <h1 style={{ textAlign: "center", padding: "20px" }}>
           Let's Build Together
@@ -64,12 +63,6 @@ class SponsorForm extends Component {
           Please complete the form below and we'll reach back out to you very
           soon.
         </p>
-=======
-      <h2 style={{ textAlign: "center", color: "grey" }}>
-        For Prospective Sponsors
-      </h2>
-      <div>
->>>>>>> dev
         <Form className={style.formMain}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label style={{ marginLeft: "10px" }}></Form.Label>
@@ -127,11 +120,7 @@ class SponsorForm extends Component {
 
           <Button
             className={style.submitButton}
-<<<<<<< HEAD
             size="lg"
-=======
-            // size="lg"
->>>>>>> dev
             type="Send"
             style={{}}
             onClick={this.submit}
