@@ -1,6 +1,6 @@
 import React from "react";
 import { Jumbotron, Container } from "react-bootstrap";
-
+// Looks good
 const Home = () => (
   <div>
     <Jumbotron>
