@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Tab, Tabs } from "react-bootstrap";
 import { Tab, Tabs, Jumbotron, Container } from "react-bootstrap";
 import MemberForm from "./forms/MemberForm";
 import SponsorForm from "./forms/SponsorForm";
