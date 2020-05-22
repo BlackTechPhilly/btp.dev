@@ -7,7 +7,7 @@ class MemberForm extends Component {
   constructor() {
     super();
     this.state = {
-      to: "ian.kimble571@gmail.com",
+      to: "blacktechphilly@gmail.com",
       name: "",
       from: "",
       subject: "",
@@ -93,7 +93,7 @@ class MemberForm extends Component {
                 I would like to learn more about Black Tech Philly
               </option>
               <option>
-                I would like to be invited to the Blackt Tech Philly Slack
+                I would like to be invited to the Black Tech Philly Slack
                 channel
               </option>
             </Form.Control>

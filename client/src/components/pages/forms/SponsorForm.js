@@ -7,7 +7,7 @@ class SponsorForm extends Component {
   constructor() {
     super();
     this.state = {
-      to: "ian.kimble571@gmail.com",
+      to: "blacktechphilly@gmail.com",
       name: "",
       from: "",
       subject: "",

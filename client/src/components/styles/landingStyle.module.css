@@ -15,9 +15,11 @@
 }
 
 .logo {
-  height: 50vh;
-  width: auto;
+  height: auto;
+  max-width: 35%;
   float: left;
+  margin-left: auto;
+  margin-right: auto;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   animation-name: shakeMe;
@@ -53,13 +55,6 @@
   }
 }
 
-h1 {
-  font-size: 50px;
-}
-p {
-  font-size: 24px;
-}
-
 .moreInfoBtn {
   background-color: #008be0;
   border: 0px;
@@ -71,17 +66,4 @@ p {
 
 .moreInfoBtn:hover {
   background-color: black;
-}
-
-@media only screen and (max-width: 800px) {
-  .logo {
-    height: 0px;
-    width: 0px;
-  }
-  h1 {
-    font-size: 200%;
-  }
-  p {
-    font-size: 100%;
-  }
 }

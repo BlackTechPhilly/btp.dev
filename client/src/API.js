@@ -1,6 +1,6 @@
 // Local;
 export const sendMsg = (msg) => {
-  return fetch(`${process.env.REACT_APP_API_URL}/sendMsg`, {
+  return fetch(`https://blacktechphilly.herokuapp.com/sendMsg`, {
     method: "POST",
     headers: {
       Accept: "application/json",

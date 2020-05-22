@@ -16,6 +16,8 @@ class NavBar extends React.Component {
           height: "auto",
           borderRadius: "25px",
           margin: "10px",
+          padding: "0px",
+          overflow: "hidden",
         }}
       >
         <Navbar.Brand style={{ fontSize: "25px" }}>
