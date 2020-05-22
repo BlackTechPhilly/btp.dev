@@ -71,7 +71,7 @@ export class TPP extends Component {
                 professional tech roles. With our projects and related
                 programming we aim to provide our members with the opportunity
                 to not only reinforce their portfolios with robust projects and
-                experience but help them land employment opportunities through
+                experience, but help them land employment opportunities through
                 our relationships with employers across the city and surrounding
                 areas.
               </p>
