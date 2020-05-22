@@ -1,21 +1,36 @@
 import React from "react";
-import { Jumbotron, Container } from "react-bootstrap";
-// Looks good
+import { Jumbotron, Container, Button, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/transparent_BTP_Logo_color.png";
+import style from "../styles/landingStyle.module.css";
+
 const Home = () => (
   <div>
-    <Jumbotron>
-      <Container>
-        <h1 style={{ textAlign: "center" }}>Welcome to Black Tech Philly</h1>
-        <p
-          style={{
-            fontFamily: "Eina01-Regular",
-            fontSize: "20px",
-            padding: "4px",
-            textAlign: "center",
-          }}
-        >
-          Philadelphia's Community for Black Tech Professionals
-        </p>
+    <Jumbotron className={style.landingImage}>
+      <Container className={style.homeTextContainer}>
+        <Row>
+          <img
+            className={style.logo}
+            src={logo}
+            alt="Black Tech Philly Color Logo"
+          />
+          <div
+            style={{
+              textAlign: "center",
+              color: "white",
+              margin: "auto",
+              padding: "10px",
+            }}
+          >
+            <h1>Welcome to Black Tech Philly</h1>
+            <p style={{ fontFamily: "Eina01-Regular" }}>
+              Philadelphia's Virtual Community for Black Tech Professionals
+            </p>
+            <Link to="/mission">
+              <Button className={style.moreInfoBtn}>Learn More</Button>
+            </Link>
+          </div>
+        </Row>
       </Container>
     </Jumbotron>
   </div>

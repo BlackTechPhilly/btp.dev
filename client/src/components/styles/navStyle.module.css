@@ -11,15 +11,15 @@
 }
 
 .logo {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   margin-right: 0px;
   padding: 0px;
   float: left;
 }
 
 .lead {
-  margin-top: 10%;
+  margin-top: 5%;
   color: white;
   transition: 0.3s;
   text-align: center;
@@ -46,6 +46,7 @@
   margin-right: 50px;
   opacity: 0.6;
   transition: 0.3s;
+  margin-left: 30px;
 }
 
 .links:hover {
@@ -55,14 +56,28 @@
   transform: scale(1.5);
 }
 
-#responsive-navbar-nav {
-  align-content: center;
-}
-
 @media only screen and (max-width: 950px) {
+  .lead {
+    margin-top: 0%;
+    color: white;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 1px;
+    float: right;
+    margin: auto;
+  }
+  .primeText {
+    font-size: 100%;
+  }
+  .subText {
+    line-height: 1px;
+    font-size: 45%;
+    font-family: "Eina01-Regular";
+    margin-left: 25px;
+  }
   .links {
     font-size: 20px;
-    margin-right: 50px;
+    margin: 10px;
     opacity: 0.6;
     transition: 0;
   }

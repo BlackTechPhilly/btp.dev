@@ -5,7 +5,7 @@ import TPP from "./TPP/ThreePointPlan";
 
 const Mission = () => (
   <div>
-    <Jumbotron fluid>
+    <Jumbotron fluid style={{ margin: "10px" }}>
       <Container>
         <h1 style={{ textAlign: "center" }}>Mission</h1>
         <p

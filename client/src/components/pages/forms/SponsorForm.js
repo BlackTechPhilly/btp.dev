@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
 import style from "../../styles/formStyle.module.css";
-import { sendMsg } from "../../utilities/API";
+import { sendMsg } from "../../../API";
 
 class SponsorForm extends Component {
   constructor() {
     super();
     this.state = {
-      to: "ian.kimble571@gmail.com",
+      to: "blacktechphilly@gmail.com",
       name: "",
       from: "",
       subject: "",
@@ -46,10 +46,16 @@ class SponsorForm extends Component {
   };
   contactForm = (name, from, text, subject) => (
     <div>
-      <h2 style={{ textAlign: "center", color: "grey" }}>
-        For Prospective Sponsors
-      </h2>
       <div>
+        <h3
+          style={{
+            textAlign: "center",
+            color: "grey",
+            padding: "10px",
+          }}
+        >
+          Prospective Sponsors
+        </h3>
         <Form className={style.formMain}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label style={{ marginLeft: "10px" }}></Form.Label>
@@ -107,7 +113,7 @@ class SponsorForm extends Component {
 
           <Button
             className={style.submitButton}
-            // size="lg"
+            size="lg"
             type="Send"
             style={{}}
             onClick={this.submit}
