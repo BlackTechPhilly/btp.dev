@@ -51,9 +51,6 @@
 
 .links:hover {
   opacity: 1;
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
 }
 
 @media only screen and (max-width: 950px) {
