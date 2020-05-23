@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import inclusionIcon from "../../assets/images/inclusion_icon.png";
 
 export class Inclusion extends Component {
   componentDidMount() {
