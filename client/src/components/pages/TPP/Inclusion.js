@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import inclusionIcon from "../../assets/images/inclusion_icon.png";
 
 export class Inclusion extends Component {
   componentDidMount() {
@@ -41,8 +40,9 @@ export class Inclusion extends Component {
         <div className="circular_reveal">
           <div className="circular_reveal_content">
             <img
-              src={require("../../assets/images/inclusion.jpg")}
-              alt="Inclusion"
+              // src={require("../../assets/images/inclusion.jpg")}
+              src={require("../../assets/images/inclusion_icon.PNG")}
+              alt="Inclusion icon image"
             />
           </div>
         </div>

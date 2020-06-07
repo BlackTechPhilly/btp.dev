@@ -9,14 +9,6 @@ class Connect extends Component {
     super();
     this.state = {};
   }
-  // doSomthing = (eventKey) => {
-  //   // alert(`selected ${eventKey}`);
-  //   // this.setState = { active: true };
-  //   this.setState({
-  //     activeTab: selectedTab,
-  //   });
-  // };
-
   render() {
     return (
       <div>
@@ -32,19 +24,14 @@ class Connect extends Component {
               }}
             >
               {" "}
-              Interested in becoming a member or sponsor? Our just have a
+              Interested in becoming a member or sponsor? Or just have a
               general question? Please complete the form below and we'll reach
               back out to you very soon.
             </p>
           </Container>
         </Jumbotron>
 
-        <Tabs
-          className={style.tabHeader}
-          onSelect={this.handleSelect}
-          // activeKey={this.state.activeTab}
-          // onSelect={this.doSomthing}
-        >
+        <Tabs className={style.tabHeader} onSelect={this.handleSelect}>
           <Tab
             style={{}}
             eventKey={1}
