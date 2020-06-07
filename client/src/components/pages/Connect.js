@@ -24,7 +24,7 @@ class Connect extends Component {
               }}
             >
               {" "}
-              Interested in becoming a member or sponsor? Our just have a
+              Interested in becoming a member or sponsor? Or just have a
               general question? Please complete the form below and we'll reach
               back out to you very soon.
             </p>
