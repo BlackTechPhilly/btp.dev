@@ -1,11 +1,10 @@
+![Black Tech Philly Logo](client/src/components/assets/images/)
+
 # Black Tech Philly
 
 #### Program Website
 
-<hr>
 Black Tech Philly is a predominantly virtual, inclusive space where Black tech professionals can discuss technology, share knowledge and experiences, find industry related opportunities, and work collaboratively on open source, community driven projects for the benefit of the denizens of Philadelphia and the surrounding areas.
-
-<hr>
 
 ## Table of Contents
 
@@ -17,11 +16,7 @@ Black Tech Philly is a predominantly virtual, inclusive space where Black tech p
 6. License
 7. File Size
 
-<hr>
-
 ## Installation
-
-<hr>
 
 ## Available Scripts
 
@@ -89,8 +84,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-<hr>
 
 # Usage
 
