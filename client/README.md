@@ -21,7 +21,7 @@ In the project directory, use the following commands to run application:
 
 To run application in development mode, run: **npm start**
 
-\_\_This will open the application in your browser at [http://localhost:3000](http://localhost:3000)
+_This will open the application in your browser at [http://localhost:3000](http://localhost:3000)_
 
 To run interactive watch mode, run: **npm test**
 
