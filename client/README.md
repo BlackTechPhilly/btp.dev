@@ -1,6 +1,5 @@
-![Black Tech Philly Logo](/client/src/components/assets/images/btp.png)
 <img src = "/client/src/components/assets/images/btp.png" 
-width ="100" height="100">
+width ="200" height="200" alt= "Black Tech Philly Logo.png">
 
 # Black Tech Philly
 
