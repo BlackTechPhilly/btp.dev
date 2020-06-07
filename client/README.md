@@ -1,4 +1,4 @@
-![Black Tech Philly Logo](/client/src/components/assets/images/)
+![Black Tech Philly Logo](/client/src/components/assets\images/btp.png)
 
 # Black Tech Philly
 
@@ -16,23 +16,23 @@ Black Tech Philly is a predominantly virtual, inclusive space where Black tech p
 
 ## Installation
 
-In the project directory, run: ##npm start##
+In the project directory, use the following commands to run application:
 
-**Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.**
+To run application in development mode, run: ##npm start##
+\_\_This will open the application in your browser at [http://localhost:3000](http://localhost:3000)
 
 To run interactive watch mode, run: ##npm test##
 
 To prepare application for production, run: ##npm run build##
 
-# Usage
+## Usage
 
-# Contribution
+## Contribution
 
-# Credits
+## Credits
 
-# License
+## License
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# File Size
+## File Size
