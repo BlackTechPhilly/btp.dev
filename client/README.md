@@ -1,5 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<b>Black Tech Philly</b>
 
+<h5>Program Website</h5>
+<hr>
+Black Tech Philly is a predominantly virtual, inclusive space where Black tech professionals can discuss technology, share knowledge and experiences, find industry related opportunities, and work collaboratively on open source, community driven projects for the benefit of the denizens of Philadelphia and the surrounding areas.
+<hr>
+<b>Table of Contents</b>
+1. Installation
+2. Usage
+3. Contribution
+4. Credits
+5. License
+6. File Size
+
+<hr>
+<b>Installation</b>
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +80,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<hr>
+
+<b>Usage</b>
+
+<b>Contribution</b>
+
+<b>Credits </b>
+
+<b>License</b>
+
+<b>File Size</b>
