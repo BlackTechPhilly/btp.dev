@@ -18,12 +18,19 @@ Black Tech Philly is a predominantly virtual, inclusive space where Black tech p
 
 In the project directory, use the following commands to run application:
 
-To run application in development mode, run: ##npm start##
+To run application in development mode, run:
+
+## npm start
+
 \_\_This will open the application in your browser at [http://localhost:3000](http://localhost:3000)
 
-To run interactive watch mode, run: ##npm test##
+To run interactive watch mode, run:
 
-To prepare application for production, run: ##npm run build##
+## npm test
+
+To prepare application for production, run:
+
+## npm run build
 
 ## Usage
 
