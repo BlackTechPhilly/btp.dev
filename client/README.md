@@ -1,4 +1,6 @@
-![Black Tech Philly Logo](/client/src/components/assets/images/btp.png){height=100px width=100px}
+![Black Tech Philly Logo](/client/src/components/assets/images/btp.png)
+<img src = "/client/src/components/assets/images/btp.png" 
+width ="100" height="100">
 
 # Black Tech Philly
 
