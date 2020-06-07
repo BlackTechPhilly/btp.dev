@@ -1,7 +1,7 @@
 import React from "react";
 import { Jumbotron, Container, Button, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/transparent_BTP_Logo_color.png";
+import logo from "../assets/images/btp.png";
 import style from "../styles/landingStyle.module.css";
 
 const Home = () => (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
-import Logo from "../assets/images/White_transparent_BTP_Logo.png";
+import Logo from "../assets/images/btp_white.png";
 import style from "../styles/navStyle.module.css";
 
 class NavBar extends React.Component {
@@ -10,6 +10,7 @@ class NavBar extends React.Component {
       <Navbar
         className={style.navbar}
         collapseOnSelect
+        sticky="top"
         expand="lg"
         style={{
           backgroundColor: "#008be0",
@@ -20,7 +21,7 @@ class NavBar extends React.Component {
           overflow: "hidden",
         }}
       >
-        <Navbar.Brand style={{ fontSize: "25px" }}>
+        <Navbar.Brand style={{ fontSize: "15px" }}>
           <img src={Logo} className={style.logo} alt="Black_Tech_Philly_Logo" />
 
           <Link

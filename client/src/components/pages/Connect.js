@@ -9,14 +9,6 @@ class Connect extends Component {
     super();
     this.state = {};
   }
-  // doSomthing = (eventKey) => {
-  //   // alert(`selected ${eventKey}`);
-  //   // this.setState = { active: true };
-  //   this.setState({
-  //     activeTab: selectedTab,
-  //   });
-  // };
-
   render() {
     return (
       <div>
@@ -39,12 +31,7 @@ class Connect extends Component {
           </Container>
         </Jumbotron>
 
-        <Tabs
-          className={style.tabHeader}
-          onSelect={this.handleSelect}
-          // activeKey={this.state.activeTab}
-          // onSelect={this.doSomthing}
-        >
+        <Tabs className={style.tabHeader} onSelect={this.handleSelect}>
           <Tab
             style={{}}
             eventKey={1}
