@@ -13,12 +13,9 @@
   );
   border-radius: 25px;
 }
-
 .logo {
-  /* min-height: auto; */
-  min-height: 35%;
-  /* min-width: 100%; */
-  min-width: 35%;
+  min-height: auto;
+  width: 35%;
   float: left;
   margin-left: auto;
   margin-right: auto;
@@ -29,7 +26,6 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
 @keyframes shakeMe {
   2%,
   18% {
@@ -56,7 +52,6 @@
     transform: translate3d(0px, 0, 0);
   }
 }
-
 .moreInfoBtn {
   background-color: #008be0;
   border: 0px;
@@ -65,7 +60,6 @@
   transition: 0.3s;
   font-size: 30px;
 }
-
 .moreInfoBtn:hover {
   background-color: black;
 }
