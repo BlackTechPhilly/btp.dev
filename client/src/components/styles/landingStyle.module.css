@@ -16,9 +16,9 @@
 
 .logo {
   /* min-height: auto; */
-  max-height: 35%;
+  min-height: 35%;
   /* min-width: 100%; */
-  max-width: 35%;
+  min-width: 35%;
   float: left;
   margin-left: auto;
   margin-right: auto;
