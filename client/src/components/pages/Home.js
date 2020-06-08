@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/btp.png";
 import style from "../styles/landingStyle.module.css";
 
-// Confirmation that changes have been pushed
-
 const Home = () => (
   <div>
     <Jumbotron className={style.landingImage}>
