@@ -6,6 +6,7 @@
 }
 .homeTextContainer {
   height: auto;
+  width: auto;
   background: transparent;
   background-image: linear-gradient(
     rgba(1, 59, 105, 0.5),
