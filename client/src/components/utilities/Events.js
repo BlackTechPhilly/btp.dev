@@ -12,10 +12,12 @@ class Events extends Component {
   }
 
   componentDidMount = () => {
-    const CALENDAR_ID = "fjd3b20u598vf32o1bt0t9g04s@group.calendar.google.com";
-    const API_KEY = "AIzaSyBkyOEi4HGYZvrf-oa4460FpQFflcx4PO8";
-    let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`;
-
+    // const CALENDAR_ID = "fjd3b20u598vf32o1bt0t9g04s@group.calendar.google.com";
+    const calendarId = process.env.REACT_APP_CALENDAR_ID;
+    // const API_KEY = "AIzaSyBkyOEi4HGYZvrf-oa4460FpQFflcx4PO8";
+    const googleKey = process.env.REACT_APP_GOOGLE_KEY;
+    // let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`;
+    let url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${googleKey}`;
     request.get(url).end((err, res) => {
       if (err) {
         console.log("err");
