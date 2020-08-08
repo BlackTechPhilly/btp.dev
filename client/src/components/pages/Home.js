@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/btp.png";
 import style from "../styles/landingStyle.module.css";
 
+import Events from "../utilities/Events";
+
 const Home = () => (
   <div>
     <Jumbotron className={style.landingImage}>
@@ -34,6 +36,33 @@ const Home = () => (
         </Row>
       </Container>
     </Jumbotron>
+    <Row style={{ textAlign: "center", margin: "10px" }}>
+      <Col
+        sm="auto"
+        md={6}
+        lg={6}
+        style={{
+          height: "400px",
+        }}
+      >
+        <div>
+          <h1 style={{ color: "008BE0" }}>Events</h1>
+          <Events />
+        </div>
+      </Col>
+      <Col
+        sm="auto"
+        md={6}
+        lg={6}
+        style={{
+          height: "400px",
+        }}
+      >
+        <div>
+          <h1>Latest</h1>
+        </div>
+      </Col>
+    </Row>
   </div>
 );
 
