@@ -42,7 +42,8 @@ const Home = () => (
         md={6}
         lg={6}
         style={{
-          height: "400px",
+          height: "auto",
+          display: "",
         }}
       >
         <div style={{ alignContent: "center" }}>
@@ -54,7 +55,8 @@ const Home = () => (
         md={6}
         lg={6}
         style={{
-          height: "400px",
+          height: "auto",
+          display: "",
         }}
       >
         <div>

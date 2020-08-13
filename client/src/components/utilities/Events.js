@@ -56,7 +56,14 @@ class Events extends Component {
 
   render() {
     return (
-      <div style={{ textAlign: "center" }}>
+      <div
+        style={{
+          textAlign: "center",
+          height: "auto",
+          width: "auto",
+          fontSize: "12px",
+        }}
+      >
         {/* maps data but only returns one*/}
         {/* {this.state.events.map((event, index) => (
           <div key={index}>
@@ -75,71 +82,99 @@ class Events extends Component {
             </button>
           </div>
         ))} */}
-        <Col>
-          <Row style={{}}>
-            <Card style={{ width: "500px", margin: "10px" }}>
-              <Card.Body>
-                <Card.Title> {this.state.eventFour.summary}</Card.Title>
-                {/* <Card.Subtitle className="mb-2 text-muted">
+        <Col
+          sm="auto"
+          md={6}
+          lg={6}
+          style={{
+            height: "auto",
+            display: "inline-block",
+          }}
+        >
+          <Card
+            style={{
+              width: "auto",
+              height: "auto",
+            }}
+          >
+            <Card.Body style={{}}>
+              <Card.Title> {this.state.eventFour.summary}</Card.Title>
+              {/* <Card.Subtitle className="mb-2 text-muted">
               {moment().format("MMMM Do YYYY, h:mm:ss a")}-
               {moment().format("h:mm:ss a")}
             </Card.Subtitle> */}
-                <Card.Text>{this.state.eventFour.description}</Card.Text>
-                <Card.Link
-                  href={this.state.eventFour.hangoutLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Google Hangouts Link
-                </Card.Link>
-              </Card.Body>
-            </Card>
-          </Row>
-          <Row>
-            <Card style={{ width: "500px", margin: "10px" }}>
-              <Card.Body>
-                <Card.Title> {this.state.eventThree.summary}</Card.Title>
-                <Card.Text>{this.state.eventThree.description}</Card.Text>
-                <Card.Link
-                  href={this.state.eventThree.hangoutLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Google Hangouts Link
-                </Card.Link>
-              </Card.Body>
-            </Card>
-          </Row>
+              <Card.Text>{this.state.eventFour.description}</Card.Text>
+              <Card.Link
+                href={this.state.eventFour.hangoutLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Hangouts Link
+              </Card.Link>
+            </Card.Body>
+          </Card>
 
-          <Row style={{}}>
-            <Card style={{ width: "500px", margin: "10px" }}>
-              <Card.Body>
-                <Card.Title> {this.state.eventTwo.summary}</Card.Title>
-                <Card.Text>{this.state.eventTwo.description}</Card.Text>
-                <Card.Link
-                  href={this.state.eventTwo.hangoutLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Google Hangouts Link
-                </Card.Link>
-              </Card.Body>
-            </Card>
+          <Card
+            style={{
+              width: "auto",
+              height: "auto",
+            }}
+          >
+            <Card.Body style={{}}>
+              <Card.Title> {this.state.eventThree.summary}</Card.Title>
+              <Card.Text>{this.state.eventThree.description}</Card.Text>
+              <Card.Link
+                href={this.state.eventThree.hangoutLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Hangouts Link
+              </Card.Link>
+            </Card.Body>
+          </Card>
+        </Col>
 
-            <Card style={{ width: "500px", margin: "10px" }}>
-              <Card.Body>
-                <Card.Title> {this.state.eventOne.summary}</Card.Title>
-                <Card.Text>{this.state.eventOne.description}</Card.Text>
-                <Card.Link
-                  href={this.state.eventOne.hangoutLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Google Hangouts Link
-                </Card.Link>
-              </Card.Body>
-            </Card>
-          </Row>
+        <Col
+          sm="auto"
+          md={6}
+          lg={6}
+          style={{
+            height: "auto",
+            display: "inline-block",
+          }}
+        >
+          <Card
+            style={{
+              width: "auto",
+              height: "auto",
+            }}
+          >
+            <Card.Body style={{}}>
+              <Card.Title> {this.state.eventTwo.summary}</Card.Title>
+              <Card.Text>{this.state.eventTwo.description}</Card.Text>
+              <Card.Link
+                href={this.state.eventTwo.hangoutLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Hangouts Link
+              </Card.Link>
+            </Card.Body>
+          </Card>
+
+          <Card style={{ width: "auto", height: "auto" }}>
+            <Card.Body style={{}}>
+              <Card.Title> {this.state.eventOne.summary}</Card.Title>
+              <Card.Text>{this.state.eventOne.description}</Card.Text>
+              <Card.Link
+                href={this.state.eventOne.hangoutLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Hangouts Link
+              </Card.Link>
+            </Card.Body>
+          </Card>
         </Col>
       </div>
     );
