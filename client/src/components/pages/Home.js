@@ -45,9 +45,8 @@ const Home = () => (
           height: "400px",
         }}
       >
-        <div>
-          <h1 style={{ color: "008BE0" }}>Events</h1>
-          <Events />
+        <div style={{ alignContent: "center" }}>
+          <h1 style={{ color: "008BE0" }}>Events</h1> <Events />
         </div>
       </Col>
       <Col
