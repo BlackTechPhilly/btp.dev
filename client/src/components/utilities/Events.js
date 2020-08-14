@@ -44,6 +44,8 @@ class Events extends Component {
         //   let one = this.state.events[0];
         //   console.log(one);
         // });
+
+        console.log(res);
         this.setState({
           eventOne: res.body.items[0],
           eventTwo: res.body.items[1],
