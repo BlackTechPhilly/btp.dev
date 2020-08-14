@@ -5,6 +5,7 @@ import logo from "../assets/images/btp.png";
 import style from "../styles/landingStyle.module.css";
 
 import Events from "../utilities/Events";
+import Blogs from "./blogs/Blogs";
 
 const Home = () => (
   <div>
@@ -61,6 +62,7 @@ const Home = () => (
       >
         <div>
           <h1>Latest</h1>
+          <Blogs />
         </div>
       </Col>
     </Row>
