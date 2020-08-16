@@ -68,7 +68,9 @@ class Events extends Component {
             }}
           >
             <Card.Body style={{}}>
-              <Card.Title> {this.state.eventFour.summary}</Card.Title>
+              <Card.Title>
+                <u>{this.state.eventFour.summary}</u>
+              </Card.Title>
 
               <Card.Text>{this.state.eventFour.description}</Card.Text>
               <Card.Link
@@ -93,7 +95,10 @@ class Events extends Component {
             }}
           >
             <Card.Body style={{}}>
-              <Card.Title> {this.state.eventThree.summary}</Card.Title>
+              <Card.Title>
+                {" "}
+                <u>{this.state.eventThree.summary}</u>
+              </Card.Title>
               <Card.Text>{this.state.eventThree.description}</Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
@@ -128,7 +133,9 @@ class Events extends Component {
             }}
           >
             <Card.Body style={{}}>
-              <Card.Title> {this.state.eventTwo.summary}</Card.Title>
+              <Card.Title>
+                <u>{this.state.eventTwo.summary}</u>{" "}
+              </Card.Title>
               <Card.Text>{this.state.eventTwo.description}</Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
@@ -152,7 +159,9 @@ class Events extends Component {
             }}
           >
             <Card.Body style={{}}>
-              <Card.Title> {this.state.eventOne.summary}</Card.Title>
+              <Card.Title>
+                <u> {this.state.eventOne.summary}</u>
+              </Card.Title>
               <Card.Text>{this.state.eventOne.description}</Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
