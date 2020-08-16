@@ -27,7 +27,6 @@ class Events extends Component {
       if (err) {
         console.log("err");
       } else {
-        console.log(res);
         this.setState({
           eventOne: res.body.items[0],
           eventTwo: res.body.items[1],
