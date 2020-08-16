@@ -26,25 +26,6 @@ class Events extends Component {
       if (err) {
         console.log("err");
       } else {
-        // Returns most recent event- but only one event
-        // JSON.parse(res.text).items.map((event) => {
-        //   // console.log(event.summary);
-        //   // console.log(event.description);
-        //   // console.log(event.start);
-        //   // console.log(event.end);
-        //   // console.log(event.hangoutLink);
-
-        //   this.setState({
-        //     events: [event],
-        //     eventOne: [event[0]],
-        //     eventOne: [event[1]],
-        //     eventThree: [event[2]],
-        //   });
-        //   console.log(this.state.events);
-        //   let one = this.state.events[0];
-        //   console.log(one);
-        // });
-
         console.log(res);
         this.setState({
           eventOne: res.body.items[0],
@@ -66,28 +47,11 @@ class Events extends Component {
           fontSize: "12px",
         }}
       >
-        {/* maps data but only returns one*/}
-        {/* {this.state.events.map((event, index) => (
-          <div key={index}>
-            <h2>{event.summary}</h2>
-            {moment(event.start.dateTime).format("MMMM Do YYYY, h:mm:ss a")}-
-            {moment(event.end.dateTime).format("h:mm:ss a")}
-            <p>{event.description}</p>{" "}
-            <button>
-              <a
-                href={event.hangoutLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Google Hangout Link
-              </a>
-            </button>
-          </div>
-        ))} */}
         <Col
           sm="auto"
-          md={6}
-          lg={6}
+          md="auto"
+          lg="auto"
+          xl={6}
           style={{
             height: "auto",
             display: "inline-block",
@@ -97,16 +61,18 @@ class Events extends Component {
             style={{
               width: "auto",
               height: "auto",
+              color: "white",
+              fontSize: "20px",
+              backgroundColor: "#008BE0",
+              margin: "5px",
             }}
           >
             <Card.Body style={{}}>
               <Card.Title> {this.state.eventFour.summary}</Card.Title>
-              {/* <Card.Subtitle className="mb-2 text-muted">
-              {moment().format("MMMM Do YYYY, h:mm:ss a")}-
-              {moment().format("h:mm:ss a")}
-            </Card.Subtitle> */}
+
               <Card.Text>{this.state.eventFour.description}</Card.Text>
               <Card.Link
+                style={{ color: "#FFD355" }}
                 href={this.state.eventFour.hangoutLink}
                 target="_blank"
                 rel="noreferrer"
@@ -120,12 +86,17 @@ class Events extends Component {
             style={{
               width: "auto",
               height: "auto",
+              color: "white",
+              fontSize: "20px",
+              backgroundColor: "#008BE0",
+              margin: "5px",
             }}
           >
             <Card.Body style={{}}>
               <Card.Title> {this.state.eventThree.summary}</Card.Title>
               <Card.Text>{this.state.eventThree.description}</Card.Text>
               <Card.Link
+                style={{ color: "#FFD355" }}
                 href={this.state.eventThree.hangoutLink}
                 target="_blank"
                 rel="noreferrer"
@@ -138,8 +109,9 @@ class Events extends Component {
 
         <Col
           sm="auto"
-          md={6}
-          lg={6}
+          md="auto"
+          lg="auto"
+          xl={6}
           style={{
             height: "auto",
             display: "inline-block",
@@ -149,12 +121,17 @@ class Events extends Component {
             style={{
               width: "auto",
               height: "auto",
+              color: "white",
+              fontSize: "20px",
+              backgroundColor: "#008BE0",
+              margin: "5px",
             }}
           >
             <Card.Body style={{}}>
               <Card.Title> {this.state.eventTwo.summary}</Card.Title>
               <Card.Text>{this.state.eventTwo.description}</Card.Text>
               <Card.Link
+                style={{ color: "#FFD355" }}
                 href={this.state.eventTwo.hangoutLink}
                 target="_blank"
                 rel="noreferrer"
@@ -164,11 +141,21 @@ class Events extends Component {
             </Card.Body>
           </Card>
 
-          <Card style={{ width: "auto", height: "auto" }}>
+          <Card
+            style={{
+              width: "auto",
+              height: "auto",
+              color: "white",
+              fontSize: "20px",
+              backgroundColor: "#008BE0",
+              margin: "5px",
+            }}
+          >
             <Card.Body style={{}}>
               <Card.Title> {this.state.eventOne.summary}</Card.Title>
               <Card.Text>{this.state.eventOne.description}</Card.Text>
               <Card.Link
+                style={{ color: "#FFD355" }}
                 href={this.state.eventOne.hangoutLink}
                 target="_blank"
                 rel="noreferrer"

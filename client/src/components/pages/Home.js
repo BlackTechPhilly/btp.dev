@@ -46,9 +46,10 @@ const Home = () => (
           height: "auto",
           display: "",
         }}
+        style={{ backgroundColor: "008BE0", borderRadius: "25px" }}
       >
         <div style={{ alignContent: "center" }}>
-          <h1 style={{ color: "008BE0" }}>Events</h1> <Events />
+          <h1 style={{ color: "#008BE0" }}>Events</h1> <Events />
         </div>
       </Col>
       <Col
@@ -61,7 +62,7 @@ const Home = () => (
         }}
       >
         <div>
-          <h1>Latest</h1>
+          <h1 style={{ color: "#008BE0" }}>Latest</h1>
           <Blogs />
         </div>
       </Col>

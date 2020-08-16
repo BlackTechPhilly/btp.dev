@@ -18,7 +18,9 @@ export class Blogs extends Component {
   //   }
 
   componentDidMount() {
-    fetch("http://localhost:1337/testblogs")
+    // fetch("http://localhost:1337/testblogs")
+    // fetch("https://strapizz.herokuapp.com/blogs")
+    fetch("")
       .then((response) => {
         if (response.status >= 400) {
           throw new Error("could not return data");
