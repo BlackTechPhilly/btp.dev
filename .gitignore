@@ -28,3 +28,6 @@ yarn-error.log*
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
+
+# Local Netlify folder
+.netlify
