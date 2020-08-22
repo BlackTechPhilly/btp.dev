@@ -25,7 +25,9 @@ class Events extends Component {
     let url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${googleKey}`;
     request.get(url).end((err, res) => {
       if (err) {
-        console.log("err");
+        console.log(err);
+          console.log(calendarId);
+          console.log(googleKey);
       } else {
         this.setState({
           eventOne: res.body.items[0],
