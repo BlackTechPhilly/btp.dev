@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import request from "superagent";
-import { Link } from "react-router-dom";
-import moment from "moment";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 
 class Events extends Component {
   constructor() {
@@ -25,7 +23,7 @@ class Events extends Component {
     let url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${googleKey}`;
     request.get(url).end((err, res) => {
       if (err) {
-        console.log("err");
+        console.log("err", err.status);
       } else {
         this.setState({
           eventOne: res.body.items[0],
