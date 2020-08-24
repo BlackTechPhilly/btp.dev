@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { Accordion, Container, Card, Col, Row } from 'react-bootstrap'; 
+import React from 'react';
+// import { Link, withRouter } from "react-router-dom";
+import { Accordion, Container, Card, Button } from 'react-bootstrap'; 
+
+import SingleBlog from './singleBlogPost'; 
+
 
 const BlogItem = (props) => {
 
     const { blogs } = props; 
 
-    // const [ blogList, setBlogList ] = useState({
+    console.log(blogs); 
 
-    // }); 
 
 
     return (
@@ -20,12 +23,15 @@ const BlogItem = (props) => {
                         <Card.Img variant="top" src={blog.featuredImage} />
                         <Card.Body>
                           <Card.Title> { blog.title } </Card.Title>
-                          <Card.Subtitle> authored by ____ </Card.Subtitle>
+                          <Card.Subtitle> { blog.subtitle } </Card.Subtitle>
                         <Accordion defaultActiveKey="0">
-                          <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> read more </Accordion.Toggle>
+                          <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> cool button icon thing </Accordion.Toggle>
                         <Accordion.Collapse eventKey="1">
                           <Card.Text>
-                            { blog.content }
+
+                            { blog.body }
+                            {/* <Link variant="link" to="/singleblog"> read more </Link>  */}
+
                           </Card.Text>
                         </Accordion.Collapse> 
                         </Accordion>                     
