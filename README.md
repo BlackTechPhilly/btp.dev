@@ -34,7 +34,9 @@ To prepare application for production, run: **npm run build**
 ## Credits
 
 Ian Kimble -
+
 Ryan Small -
+
 Khalil Saboor -
 
 ## License

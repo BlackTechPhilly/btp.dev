@@ -13,8 +13,6 @@ class Events extends Component {
       eventFour: [],
     };
   }
-
-  // update to dependencies
   componentDidMount = () => {
     const calendarId = process.env.REACT_APP_CALENDAR_ID;
 
