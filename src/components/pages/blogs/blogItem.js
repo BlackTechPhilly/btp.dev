@@ -4,7 +4,7 @@ import { Accordion, Container, Card, Button } from 'react-bootstrap';
 
 import SingleBlog from './singleBlogPost'; 
 
-
+ 
 
 
 const BlogItem = (props) => { 
@@ -24,7 +24,9 @@ const BlogItem = (props) => {
                           <Card.Title> { blog.title } </Card.Title>
                           <Card.Subtitle> { blog.subtitle } </Card.Subtitle>
                         <Accordion defaultActiveKey="0">
-                          <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> </Accordion.Toggle>
+                          <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> 
+                            <img alt ='arrow' src={require('../../../components/assets/images/down_arrow.png')} width='15' height='15'/> 
+                          </Accordion.Toggle>
                         <Accordion.Collapse eventKey="1">
                           <Card.Text>
                             { blog.body }
