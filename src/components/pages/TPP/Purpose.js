@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import image from '../../assets/images/purpose_icon.PNG'
 
 export class Purpose extends Component {
   componentDidMount() {
@@ -40,7 +41,6 @@ export class Purpose extends Component {
         <div className="circular_reveal_p">
           <div className="circular_reveal_content_p">
             <img
-              // src={require ('../../assets/images/purpose.jpg')}
               src={require("../../assets/images/purpose_icon.PNG")}
               alt="Purpose icon image"
             />
