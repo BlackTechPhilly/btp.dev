@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import image from '../../assets/images/purpose_icon.PNG'
 
 export class Purpose extends Component {
   componentDidMount() {

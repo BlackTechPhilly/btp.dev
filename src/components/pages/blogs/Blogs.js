@@ -24,10 +24,7 @@ export class Blogs extends Component {
     render(){
         return(
             <div>
-                <div>
-                    <BlogItem blogs={this.state.techBlogs} />
-                    {console.log(this.state.techBlogs)}
-                </div>
+                <BlogItem blogs={this.state.techBlogs} />
             </div>
         )
     }
