@@ -65,12 +65,12 @@ const SingleBlog = () => {
                         <h1> { singleBlog.title } </h1>
                         <h2> { singleBlog.subtitle } </h2>
                     </div>
-                        <a> Written By: { singleBlog.author } <br></br> Posted: {} </a>
+                        <a> Written By: { singleBlog.author } <br></br> Posted: { Date(singleBlog.createdAt) } </a>
                     
                     <Col> 
                     
                         {/* <p>{ text }</p>  */}
-                        {/* <p>{ body }</p> */}
+                        <p>{ body }</p>
                         {/* <p>{setCol(body)}</p> */}
                         
                     </Col>
