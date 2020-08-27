@@ -1,8 +1,7 @@
-import React, { ReactDOM, useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import { Accordion, Container, Card, Button } from 'react-bootstrap'; 
 
-import SingleBlog from './singleBlogPost'; 
 
  
 
@@ -29,15 +28,13 @@ const BlogItem = (props) => {
                           </Accordion.Toggle>
                         <Accordion.Collapse eventKey="1">
                           <Card.Text>
+                            
                             { blog.body }
 
-                           
-                              <Link to= {`/single_blog/${blog.id}`}>
-                                <Button variant="link" block>read more</Button> 
-                              </Link> 
-                          
-                            
-
+                            <Link to= {`/single_blog/${blog.id}`}>
+                              <Button block variant="link" height='150%'>read more</Button> 
+                            </Link> 
+                        
                           </Card.Text>
                         </Accordion.Collapse> 
                         </Accordion>                     

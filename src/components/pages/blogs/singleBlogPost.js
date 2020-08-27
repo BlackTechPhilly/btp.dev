@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Jumbotron, Container, Col } from 'react-bootstrap'
-import { useParams, useRouteMatch } from 'react-router-dom'
-
+import { Jumbotron, Container, Col, Row } from 'react-bootstrap'
+import { useParams } from 'react-router-dom'
 
 
 
@@ -18,41 +17,68 @@ const SingleBlog = () => {
         {
             const content = response.data
             setBlog(content)
-        })},[setBlog])
-    
+        })},[blogId, setBlog]
+    )
+        
+    const created = new Date(singleBlog.createdAt)
+    const body = JSON.stringify(`${singleBlog.body}`)
+    const text = body.split(" ")
+
+    function setCol(words){
+        var baseline = 0 
+        var endline = 100
+        for(var i=0;i < words.length+1;i++) {
+            if( i === endline && endline <= words.length ) { 
+            var columns = words.slice(baseline, endline)
+            console.log(columns)
+                baseline = endline; 
+                endline+=100;
+                
+            // return (
+            //     <Col>
+            //         <p>{columns}</p>
+            //     </Col>
+            // )
+            
+            }
+            if(endline > words.length) { 
+                endline = words.length
+            }
+            // else if( i!==endline ) continue;  
+            
+            console.log(`index is ${i}`)
+            console.log(`base is ${baseline}`)
+            console.log(`count is ${endline}`)  
+            
+        }
+        //console.log(words)
         
         
-    const body = JSON.stringify(singleBlog.body)
-    // const text = body.split(' ')
-
-    console.log(body)
-    // console.log(body.split(' '))
-
-
-    // function styles(words){
-    //     if( words.length > 100   ) return new Col 
-    // }
-
-    //style = { styles(content) }
+    }
+    console.log(created)
 
     return (
         <div id="single_blog">
             <Jumbotron>
                 <Container key={singleBlog.id}>
-                            <h1> Blogs !! </h1>
-                        <div className="blog_title">
-                            <h1> { singleBlog.title } Title  </h1>
-                            <h2> { singleBlog.subtitle } </h2>
-                        </div>
-                            <a> Posted: { singleBlog.createdAt } Written By: { singleBlog.author }</a>
-                        {/* <Col style={styles({body})}> 
-                            <p> { body } </p>        
-                        </Col> */}
-                        </Container>
-                    </Jumbotron>
-                </div>
-                )
-      
+                    <div className="blog_title">
+                        <h1> { singleBlog.title } </h1>
+                        <h2> { singleBlog.subtitle } </h2>
+                    </div>
+                        <a> Written By: { singleBlog.author } <br></br> Posted: {} </a>
+                    
+                    <Col> 
+                    
+                        {/* <p>{ text }</p>  */}
+                        {/* <p>{ body }</p> */}
+                        {/* <p>{setCol(body)}</p> */}
+                        
+                    </Col>
+
+                </Container>
+            </Jumbotron>
+        </div>
+    ) 
 }
 
 export default SingleBlog
