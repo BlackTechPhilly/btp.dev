@@ -1,19 +1,30 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import { Jumbotron, Container, Col } from 'react-bootstrap'
+import { useParams, useRouteMatch } from 'react-router-dom'
 
 
 
-const SingleBlog = (props) => {
 
-    const { blog } = props
 
-    const title = blog.title
-    const subtitle = blog.title
-    const author = blog.author
-    const created = blog.createdAt
-    const content = JSON.stringify(blog.body)
+const SingleBlog = () => {
 
-    console.log(content)
+    const blog = JSON.stringify(useParams())
+    const [ singleBlog, setBlog ] = useState();
+
+    useEffect(()=>{
+        axios.get(`https://btpblog.herokuapp.com/tech-posts/${blog}`).then((response) => 
+        {
+            const content = response.data
+            console.log(content)
+            setBlog({content})
+        })}, 
+        [setBlog]
+    )
+
+    console.log(blog)
+    console.log(singleBlog)
+    
 
 
 
@@ -21,24 +32,33 @@ const SingleBlog = (props) => {
     //     if( body.length > 100   ) return new Col 
     // }
 
+    //style = { styles(content) }
+
+
+    return (
+        <div>
+            {/* {singleBlog.map((techBlog) => { */}
     return (
         <div id="single_blog">
             <Jumbotron>
                 <Container>
                     {/* <div className="blog_title">
-                        <h1> { title }  </h1>
-                        <h2> { subtitle } </h2>
+                        <h1> { techBlog.title } Title  </h1>
+                        <h2> { techBlog.subtitle } </h2>
                     </div>
-                        <a> Posted: { created } Written By: { author }</a>
-                    <Col style = { styles(content) }>
+                        <a> Posted: { techBlog.createdAt } Written By: { techBlog.author }</a> */}
+                    <Col >
                        
-                    </Col> */}
+                    </Col>
 
                     <h1> Blogs !! </h1>
                 </Container>
             </Jumbotron>
         </div>
+        )
+    {/* })}      */}
+        </div>
     )
 }
 
-export default SingleBlog; 
+export default SingleBlog

@@ -5,7 +5,7 @@ import logo from "../assets/images/btp.png";
 import style from "../styles/landingStyle.module.css";
 
 import Events from "../utilities/Events";
-import Blogs from "./blogs/Blogs";
+import Blogs from './blogs/Blogs';
 
 const Home = () => (
   <div>
