@@ -28,13 +28,12 @@ const BlogItem = (props) => {
                           </Accordion.Toggle>
                         <Accordion.Collapse eventKey="1">
                           <Card.Text>
-                            
-                            { blog.body }
+                            {/* { blog.body } */}
 
                             <Link to= {`/single_blog/${blog.id}`}>
                               <Button block variant="link" height='150%'>read more</Button> 
                             </Link> 
-                        
+                            
                           </Card.Text>
                         </Accordion.Collapse> 
                         </Accordion>                     
