@@ -1,5 +1,7 @@
-<img src = "/client/src/components/assets/images/btp.png" 
-width ="200" height="200" alt= "Black Tech Philly Logo.png">
+<img src="/src/components/assets/images/btp.png" 
+width ="200" height="200" alt= "BlackTechPhillyLogo.png">
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3d03da3e-6b1e-4da1-8462-013438890af0/deploy-status)](https://app.netlify.com/sites/blacktechphilly/deploys)
 
 # Black Tech Philly
 
