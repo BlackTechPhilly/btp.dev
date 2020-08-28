@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { Accordion, Container, Card, Col, Row } from 'react-bootstrap'; 
+import React from 'react';
+import { Link } from "react-router-dom";
+import { Accordion, Container, Card, Button } from 'react-bootstrap'; 
 
-const BlogItem = (props) => {
+
+ 
+
+
+const BlogItem = (props) => { 
 
     const { blogs } = props; 
-
-    // const [ blogList, setBlogList ] = useState({
-
-    // }); 
-
-
+    console.log(blogs);
+  
     return (
         <div>
           {blogs.map((blog) => {
@@ -20,12 +21,20 @@ const BlogItem = (props) => {
                         <Card.Img variant="top" src={blog.featuredImage} />
                         <Card.Body>
                           <Card.Title> { blog.title } </Card.Title>
-                          <Card.Subtitle> authored by ____ </Card.Subtitle>
+                          <Card.Subtitle> { blog.subtitle } </Card.Subtitle>
                         <Accordion defaultActiveKey="0">
-                          <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> read more </Accordion.Toggle>
+                          <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> 
+                            <img alt ='arrow' src={require('../../../components/assets/images/down_arrow.png')} width='15' height='15'/> 
+                          </Accordion.Toggle>
                         <Accordion.Collapse eventKey="1">
                           <Card.Text>
-                            { blog.content }
+                            
+                            { blog.body }
+
+                            <Link to= {`/single_blog/${blog.id}`}>
+                              <Button block variant="link" height='150%'>read more</Button> 
+                            </Link> 
+                        
                           </Card.Text>
                         </Accordion.Collapse> 
                         </Accordion>                     
