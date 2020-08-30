@@ -3,7 +3,18 @@ import { Link } from "react-router-dom";
 import { Accordion, Container, Card, Button } from 'react-bootstrap'; 
 
 
- 
+
+function setCol(words){
+  var columns = words.slice(0, 500)
+        console.log(columns)    
+        return( 
+          <div>
+            {columns}  
+            <br></br>
+            <p>...</p> 
+          </div>
+        )
+  }
 
 
 const BlogItem = (props) => { 
@@ -28,11 +39,14 @@ const BlogItem = (props) => {
                           </Accordion.Toggle>
                         <Accordion.Collapse eventKey="1">
                           <Card.Text>
-                            {/* { blog.body } */}
+                            <div className="blog_body">
+                              { setCol(blog.body) }
 
                             <Link to= {`/single_blog/${blog.id}`}>
-                              <Button block variant="link" height='150%'>read more</Button> 
+                              <Button variant="link" size="lg" block>read more</Button> 
                             </Link> 
+
+                            </div>
                             
                           </Card.Text>
                         </Accordion.Collapse> 

@@ -19,22 +19,36 @@ const SingleBlog = () => {
         })},[blogId, setBlog]
     )
 
+    const created = new Date(singleBlog.createdAt).toLocaleDateString();
+
+
     return (
         <div id="single_blog">
             <Jumbotron>
                 <Container>
                     <Row>
-                        <div>
+                        <div className="sb_title">
                             <h1> { singleBlog.title } </h1>
                             <h2> { singleBlog.subtitle } </h2>
-                            <h5> Written By: { singleBlog.author } <br></br> Posted: { Date(singleBlog.createdAt) } </h5>
+                            <h5> Written By: { singleBlog.author } <br></br> Posted: { created } </h5>
                         </div>
                     </Row>
                     <Row>
-                        <Col> 
-                            <p>{ singleBlog.body }</p>
+                        <Col>
+                            <div className="sb_body">
+                                <div className="pattern">
+                                    <p style={{
+                                        fontFamily: "Eina01-Regular",
+                                        fontSize: "15px",
+                                        padding: "4px",
+                                        textAlign: "center"}}>
+                                        { singleBlog.body }
+                                    </p>
+                                </div>
+                            </div> 
                         </Col>
                     </Row>
+
                 </Container>
             </Jumbotron>
         </div>
