@@ -29,13 +29,15 @@ To run interactive watch mode, run: **npm test**
 
 To prepare application for production, run: **npm run build**
 
+## Technology
+
 ## Usage
 
-# Features
+## Features
 
-# Todos
+## Todos
 
-## Contribe
+## Contribute
 
 ## Credits
 
