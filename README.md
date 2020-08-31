@@ -35,6 +35,10 @@ To prepare application for production, run: **npm run build**
 
 ## Credits
 
+- Ian Kimble
+- Ryan Small
+- Khalil Saboor
+
 ## License
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
