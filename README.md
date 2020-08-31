@@ -17,7 +17,7 @@ Black Tech Philly is a predominantly virtual, inclusive space where Black tech p
 6. License
 7. File Size
 
-## Installation
+## Installation and Setup
 
 In the project directory, use the following commands to run application:
 
@@ -31,7 +31,11 @@ To prepare application for production, run: **npm run build**
 
 ## Usage
 
-## Contribution
+# Features
+
+# Todos
+
+## Contribe
 
 ## Credits
 
