@@ -4,6 +4,8 @@ import { Jumbotron, Container, Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import reactStringReplace from "react-string-replace";
 
+
+// new functions
 const SingleBlog = () => {
   const blog = useParams();
   const blogId = blog.blogId;
