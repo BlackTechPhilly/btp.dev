@@ -68,7 +68,9 @@ class Events extends Component {
                 <u>{this.state.eventFour.summary}</u>
               </Card.Title>
 
-              <Card.Text>{this.state.eventFour.description}</Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
+                {this.state.eventFour.description}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventFour.hangoutLink}
@@ -95,7 +97,9 @@ class Events extends Component {
                 {" "}
                 <u>{this.state.eventThree.summary}</u>
               </Card.Title>
-              <Card.Text>{this.state.eventThree.description}</Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
+                {this.state.eventThree.description}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventThree.hangoutLink}
@@ -132,7 +136,9 @@ class Events extends Component {
               <Card.Title>
                 <u>{this.state.eventTwo.summary}</u>{" "}
               </Card.Title>
-              <Card.Text>{this.state.eventTwo.description}</Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
+                {this.state.eventTwo.description}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventTwo.hangoutLink}
