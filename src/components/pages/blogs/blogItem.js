@@ -42,7 +42,10 @@ const BlogItem = (props) => {
                 <Card.Img variant="top" src={blog.featuredImage} />
                 <Card.Body>
                   <Card.Title> {blog.title} </Card.Title>
-                  <Card.Subtitle> {blog.subtitle} </Card.Subtitle>
+                  <Card.Subtitle style={{ fontFamily: "Eina01-Regular" }}>
+                    {" "}
+                    {blog.subtitle}{" "}
+                  </Card.Subtitle>
                   <Accordion defaultActiveKey="0">
                     <Accordion.Toggle
                       as={Card.Header}
@@ -54,7 +57,10 @@ const BlogItem = (props) => {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="1">
                       <Card.Text>
-                        <div className="blog_body">
+                        <div
+                          className="blog_body"
+                          style={{ fontFamily: "Eina01-Regular" }}
+                        >
                           {setCol(blog.body)}
 
                           <Link to={`/single_blog/${blog.id}`}>
@@ -62,9 +68,12 @@ const BlogItem = (props) => {
                               variant="link"
                               size="lg"
                               block
-                              style={{ color: "white" }}
+                              style={{
+                                color: "white",
+                                fontFamily: "DINCondensed-Bold",
+                              }}
                             >
-                              read more
+                              Read more
                             </Button>
                           </Link>
                         </div>
