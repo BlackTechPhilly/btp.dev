@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import request from "superagent";
-import { Link } from "react-router-dom";
-import moment from "moment";
 import { Card, Row, Col } from "react-bootstrap";
 
 class Events extends Component {
@@ -16,18 +14,14 @@ class Events extends Component {
     };
   }
 
-  // update to dependencies
   componentDidMount = () => {
     const calendarId = process.env.REACT_APP_CALENDAR_ID;
-
     const googleKey = process.env.REACT_APP_GOOGLE_KEY;
 
     let url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${googleKey}`;
     request.get(url).end((err, res) => {
       if (err) {
         console.log(err);
-          console.log(calendarId);
-          console.log(googleKey);
       } else {
         this.setState({
           eventOne: res.body.items[0],
@@ -164,7 +158,9 @@ class Events extends Component {
               <Card.Title>
                 <u> {this.state.eventOne.summary}</u>
               </Card.Title>
-              <Card.Text>{this.state.eventOne.description}</Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
+                {this.state.eventOne.description}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventOne.hangoutLink}

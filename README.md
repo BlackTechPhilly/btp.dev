@@ -17,7 +17,7 @@ Black Tech Philly is a predominantly virtual, inclusive space where Black tech p
 6. License
 7. File Size
 
-## Installation
+## Installation and Setup
 
 In the project directory, use the following commands to run application:
 
@@ -29,11 +29,21 @@ To run interactive watch mode, run: **npm test**
 
 To prepare application for production, run: **npm run build**
 
+## Technology
+
 ## Usage
 
-## Contribution
+## Features
+
+## Todos
+
+## Contribute
 
 ## Credits
+
+- Ian Kimble
+- Ryan Small
+- Khalil Saboor
 
 ## License
 

@@ -7,6 +7,9 @@ import BlogItem from './blogItem';
 const BlogsLoading = withBlogsLoading(BlogItem);
 
 export class Blogs extends Component {
+  state = {
+    techBlogs: [],
+  };
 
   
     state = {
@@ -36,4 +39,4 @@ export class Blogs extends Component {
     }
 }
 
-export default Blogs; 
+export default Blogs;

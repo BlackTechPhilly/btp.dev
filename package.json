@@ -21,6 +21,8 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
+    "react-string-replace": "^0.4.4",
+    "react-virtuoso": "^0.20.0",
     "rnpm": "^1.9.0",
     "style-it": "^2.1.4",
     "superagent": "^5.3.1",
