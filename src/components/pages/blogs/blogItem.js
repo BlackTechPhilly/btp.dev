@@ -40,7 +40,13 @@ const BlogItem = (props) => {
                         <Accordion.Collapse eventKey="1">
                           <Card.Text>
                             <div className="blog_body">
+                            <p style={{
+                              fontFamily: "Eina01-Regular",
+                              fontSize: "13px",
+                              padding: "4px",
+                              textAlign: "center"}}>
                               { setCol(blog.body) }
+                             </p> 
 
                             <Link to= {`/single_blog/${blog.id}`}>
                               <Button variant="link" size="lg" block>read more</Button> 
@@ -61,4 +67,4 @@ const BlogItem = (props) => {
         )
 }
 
-export default BlogItem; 
+export default BlogItem;
