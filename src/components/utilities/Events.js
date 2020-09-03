@@ -158,7 +158,9 @@ class Events extends Component {
               <Card.Title>
                 <u> {this.state.eventOne.summary}</u>
               </Card.Title>
-              <Card.Text>{this.state.eventOne.description}</Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
+                {this.state.eventOne.description}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventOne.hangoutLink}
