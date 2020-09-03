@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 import request from "superagent";
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-import moment from "moment";
-=======
->>>>>>> 3be4439a35a84256f623188f563fe8fe41d91a7c
 import { Card, Row, Col } from "react-bootstrap";
 
 class Events extends Component {
@@ -18,29 +13,15 @@ class Events extends Component {
       eventFour: [],
     };
   }
-<<<<<<< HEAD
-  // screwed up
-
-  // update to dependencies
-  componentDidMount = () => {
-    const calendarId = process.env.REACT_APP_CALENDAR_ID;
-
-=======
 
   componentDidMount = () => {
     const calendarId = process.env.REACT_APP_CALENDAR_ID;
->>>>>>> 3be4439a35a84256f623188f563fe8fe41d91a7c
     const googleKey = process.env.REACT_APP_GOOGLE_KEY;
 
     let url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${googleKey}`;
     request.get(url).end((err, res) => {
       if (err) {
         console.log(err);
-<<<<<<< HEAD
-          console.log(calendarId);
-          console.log(googleKey);
-=======
->>>>>>> 3be4439a35a84256f623188f563fe8fe41d91a7c
       } else {
         this.setState({
           eventOne: res.body.items[0],
