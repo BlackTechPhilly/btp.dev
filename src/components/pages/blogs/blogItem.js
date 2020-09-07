@@ -13,15 +13,9 @@ function setCol(words) {
   );
 }
 
-// Get next number of posts
-const nextPage = () => {};
-
-// Get previous number of posts
-const prevPage = () => {};
-
 const BlogItem = (props) => {
   const { blogs } = props;
-
+  console.log(blogs);
   return (
     <div>
       {blogs.map((blog) => {
@@ -53,7 +47,7 @@ const BlogItem = (props) => {
                       eventKey="1"
                       style={{ color: "#FFD355" }}
                     >
-                      Expand
+                      expand
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="1">
                       <Card.Text>
@@ -63,7 +57,7 @@ const BlogItem = (props) => {
                         >
                           {setCol(blog.body)}
 
-                          <Link to={`/single_blog/${blog.id}`}>
+                          <Link to={`/item/${blog.id}`}>
                             <Button
                               variant="link"
                               size="lg"

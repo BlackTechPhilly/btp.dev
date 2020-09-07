@@ -1,23 +1,38 @@
 import React, { Component } from "react";
 import axios from "axios";
+
+import LoadingBlog from "./LoadingBlog";
 import BlogItem from "./blogItem";
+
+const BlogsLoading = LoadingBlog(BlogItem);
 
 export class Blogs extends Component {
   state = {
     techBlogs: [],
   };
 
+  state = {
+    isLoading: false,
+    techBlogs: [],
+  };
+
   componentDidMount() {
+    this.setState({ isLoading: true });
+
     axios.get("https://btpblog.herokuapp.com/tech-posts").then((response) => {
       const content = response.data;
-      this.setState({ techBlogs: content });
+      this.setState({ isLoading: false, techBlogs: content });
+      console.log(content);
     });
   }
-
+  vbn;
   render() {
     return (
-      <div style={{ margin: "15px" }}>
-        <BlogItem blogs={this.state.techBlogs} />
+      <div>
+        <BlogsLoading
+          isLoading={this.state.isLoading}
+          blogs={this.state.techBlogs}
+        />
       </div>
     );
   }

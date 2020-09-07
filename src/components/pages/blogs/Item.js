@@ -3,8 +3,9 @@ import axios from "axios";
 import { Jumbotron, Container, Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import reactStringReplace from "react-string-replace";
+import ReactPlayer from "react-player";
 
-const SingleBlog = () => {
+const Item = () => {
   const blog = useParams();
   const blogId = blog.blogId;
   const [singleBlog, setBlog] = useState([]);
@@ -37,6 +38,17 @@ const SingleBlog = () => {
           <Row>
             <Col>
               <div>
+                {/* create ternary operator for if there is no video*/}
+                <div
+                  style={{
+                    padding: "20px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <ReactPlayer url={singleBlog.video} />
+                </div>
                 <div>
                   <p
                     style={{
@@ -64,4 +76,4 @@ const SingleBlog = () => {
   );
 };
 
-export default SingleBlog;
+export default Item;
