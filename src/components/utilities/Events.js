@@ -70,7 +70,13 @@ class Events extends Component {
               </Card.Title>
 
               <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
-                {this.state.eventFour.description}
+                {reactStringReplace(
+                  this.state.eventFour.description,
+                  /(\^)/g,
+                  (match, i) => (
+                    <p key={i}>{match}</p>
+                  )
+                )}
               </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
@@ -98,7 +104,7 @@ class Events extends Component {
                 {" "}
                 <u>{this.state.eventThree.summary}</u>
               </Card.Title>
-              <Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
                 {reactStringReplace(
                   this.state.eventThree.description,
                   /(\^)/g,
@@ -144,7 +150,13 @@ class Events extends Component {
                 <u>{this.state.eventTwo.summary}</u>{" "}
               </Card.Title>
               <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
-                {this.state.eventTwo.description}
+                {reactStringReplace(
+                  this.state.eventTwo.description,
+                  /(\^)/g,
+                  (match, i) => (
+                    <p key={i}>{match}</p>
+                  )
+                )}
               </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
@@ -172,7 +184,13 @@ class Events extends Component {
                 <u> {this.state.eventOne.summary}</u>
               </Card.Title>
               <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
-                {this.state.eventOne.description}
+                {reactStringReplace(
+                  this.state.eventOne.description,
+                  /(\^)/g,
+                  (match, i) => (
+                    <p key={i}>{match}</p>
+                  )
+                )}
               </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
