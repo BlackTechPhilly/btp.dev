@@ -12,7 +12,7 @@ function setCol(words) {
     </div>
   );
 }
-// blog item convention updated
+
 const BlogItem = (props) => {
   const { blogs } = props;
   console.log(blogs);
