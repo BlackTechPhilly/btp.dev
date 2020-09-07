@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import BlogItem from "./blogItem";
+import BlogItem from "./BlogItem";
 
 export class Blogs extends Component {
   state = {

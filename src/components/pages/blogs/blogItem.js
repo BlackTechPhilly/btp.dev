@@ -13,12 +13,6 @@ function setCol(words) {
   );
 }
 
-// Get next number of posts
-const nextPage = () => {};
-
-// Get previous number of posts
-const prevPage = () => {};
-
 const BlogItem = (props) => {
   const { blogs } = props;
 
@@ -63,7 +57,7 @@ const BlogItem = (props) => {
                         >
                           {setCol(blog.body)}
 
-                          <Link to={`/single_blog/${blog.id}`}>
+                          <Link to={`/item/${blog.id}`}>
                             <Button
                               variant="link"
                               size="lg"
