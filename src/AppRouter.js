@@ -19,7 +19,7 @@ const AppRouter = () => (
     <Route exact path="/mission" component={Mission} />
     <Route exact path="/codeofconduct" component={CodeOfConduct} />
     <Route exact path="/connect" component={Connect} />
-    <Route exact path="/single_blog/:blogId" component={SingleBlog}/>
+    <Route exact path="/single_blog/:blogId" render={() => <SingleBlog /> }/>
 
 
 
