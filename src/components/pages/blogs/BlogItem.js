@@ -12,7 +12,6 @@ function setCol(words) {
     </div>
   );
 }
-git;
 const BlogItem = (props) => {
   const { blogs } = props;
   console.log(blogs);
