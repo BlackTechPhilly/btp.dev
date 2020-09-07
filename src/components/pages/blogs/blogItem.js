@@ -14,8 +14,8 @@ function setCol(words) {
 }
 
 const BlogItem = (props) => {
-  const { blogs } = props;
-
+    const { blogs } = props; 
+    console.log(blogs);
   return (
     <div>
       {blogs.map((blog) => {
@@ -47,7 +47,7 @@ const BlogItem = (props) => {
                       eventKey="1"
                       style={{ color: "#FFD355" }}
                     >
-                      Expand
+                      expand
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="1">
                       <Card.Text>

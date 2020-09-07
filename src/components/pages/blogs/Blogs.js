@@ -1,26 +1,48 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
 import axios from "axios";
 import BlogItem from "./BlogItem";
+=======
+import React, { Component } from 'react'; 
+import axios from 'axios'; 
+
+import withBlogsLoading from './withBlogsLoading'
+import BlogItem from './blogItem'; 
+
+const BlogsLoading = withBlogsLoading(BlogItem);
+>>>>>>> dc24c03c86fb5de4ef1ab09923a2ee8a7631aec2
 
 export class Blogs extends Component {
   state = {
     techBlogs: [],
   };
 
-  componentDidMount() {
-    axios.get("https://btpblog.herokuapp.com/tech-posts").then((response) => {
-      const content = response.data;
-      this.setState({ techBlogs: content });
-    });
-  }
+  
+    state = {
+        isLoading: false, 
+        techBlogs: []
+    }
+    
+    
 
-  render() {
-    return (
-      <div style={{ margin: "15px" }}>
-        <BlogItem blogs={this.state.techBlogs} />
-      </div>
-    );
-  }
+    componentDidMount(){
+        this.setState({ isLoading: true })
+        
+        axios.get('https://btpblog.herokuapp.com/tech-posts')
+        .then(response => {
+        const content = response.data
+        this.setState({ isLoading: false, techBlogs: content })
+        console.log(content)
+    })
+    }
+  vbn
+    render(){
+        return(
+            <div>
+                <BlogsLoading isLoading={this.state.isLoading} blogs={this.state.techBlogs} />
+            </div>
+        )
+    }
 }
 
 export default Blogs;
