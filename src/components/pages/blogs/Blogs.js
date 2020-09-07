@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 
 import LoadingBlog from "./LoadingBlog";
-import BlogItem from "./blogItem";
+import BlogItem from "./BlogItem";
 
 const BlogsLoading = LoadingBlog(BlogItem);
 

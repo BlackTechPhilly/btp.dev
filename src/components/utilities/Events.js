@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import request from "superagent";
 import { Card, Row, Col } from "react-bootstrap";
+import reactStringReplace from "react-string-replace";
 
 class Events extends Component {
   constructor() {
@@ -95,7 +96,15 @@ class Events extends Component {
                 {" "}
                 <u>{this.state.eventThree.summary}</u>
               </Card.Title>
-              <Card.Text>{this.state.eventThree.description}</Card.Text>
+              <Card.Text>
+                {reactStringReplace(
+                  this.state.eventThree.description,
+                  /(\^)/g,
+                  (match, i) => (
+                    <p key={i}>{match}</p>
+                  )
+                )}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventThree.hangoutLink}
