@@ -98,10 +98,6 @@ class Events extends Component {
                 {" "}
                 <u>{this.state.eventThree.summary}</u>
               </Card.Title>
-<<<<<<< HEAD
-              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
-                {this.state.eventThree.description}
-=======
               <Card.Text>
                 {reactStringReplace(
                   this.state.eventThree.description,
@@ -110,7 +106,6 @@ class Events extends Component {
                     <p key={i}>{match}</p>
                   )
                 )}
->>>>>>> 3e57eedcec8342ff4d20ab0da4306a072c647fa2
               </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
