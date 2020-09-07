@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import request from "superagent";
 import { Card, Row, Col } from "react-bootstrap";
+import reactStringReplace from "react-string-replace";
 
 class Events extends Component {
   constructor() {
@@ -68,7 +69,15 @@ class Events extends Component {
                 <u>{this.state.eventFour.summary}</u>
               </Card.Title>
 
-              <Card.Text>{this.state.eventFour.description}</Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
+                {reactStringReplace(
+                  this.state.eventFour.description,
+                  /(\^)/g,
+                  (match, i) => (
+                    <p key={i}>{match}</p>
+                  )
+                )}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventFour.hangoutLink}
@@ -95,7 +104,15 @@ class Events extends Component {
                 {" "}
                 <u>{this.state.eventThree.summary}</u>
               </Card.Title>
-              <Card.Text>{this.state.eventThree.description}</Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
+                {reactStringReplace(
+                  this.state.eventThree.description,
+                  /(\^)/g,
+                  (match, i) => (
+                    <p key={i}>{match}</p>
+                  )
+                )}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventThree.hangoutLink}
@@ -132,7 +149,15 @@ class Events extends Component {
               <Card.Title>
                 <u>{this.state.eventTwo.summary}</u>{" "}
               </Card.Title>
-              <Card.Text>{this.state.eventTwo.description}</Card.Text>
+              <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
+                {reactStringReplace(
+                  this.state.eventTwo.description,
+                  /(\^)/g,
+                  (match, i) => (
+                    <p key={i}>{match}</p>
+                  )
+                )}
+              </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
                 href={this.state.eventTwo.hangoutLink}
@@ -159,7 +184,13 @@ class Events extends Component {
                 <u> {this.state.eventOne.summary}</u>
               </Card.Title>
               <Card.Text style={{ fontFamily: "Eina01-Regular" }}>
-                {this.state.eventOne.description}
+                {reactStringReplace(
+                  this.state.eventOne.description,
+                  /(\^)/g,
+                  (match, i) => (
+                    <p key={i}>{match}</p>
+                  )
+                )}
               </Card.Text>
               <Card.Link
                 style={{ color: "#FFD355" }}
