@@ -5,6 +5,10 @@ import { useParams } from "react-router-dom";
 import reactStringReplace from "react-string-replace";
 import ReactPlayer from "react-player";
 
+function ShowVideo(props){
+  if ('video' in props === false ) document.getElementById("vid").style.visibility = "hidden"
+}
+
 const Item = () => {
   const blog = useParams();
   const blogId = blog.blogId;
@@ -16,10 +20,15 @@ const Item = () => {
       .then((response) => {
         const content = response.data;
         setBlog(content);
+        ShowVideo(content);
+        console.log('video' in content)
+ 
       });
   }, [blogId, setBlog]);
 
   const created = new Date(singleBlog.createdAt).toLocaleDateString();
+
+  console.log(singleBlog.video)
 
   return (
     <div style={{}}>
@@ -34,40 +43,24 @@ const Item = () => {
               </i>
             </>
           </div>
-
+          <Row>
+            <div  id="vid">
+                {/* create ternary operator for if there is no video*/}
+                <ReactPlayer url={singleBlog.video} /> 
+            </div>  
+          </Row>
           <Row>
             <Col>
-              <div>
-                {/* create ternary operator for if there is no video*/}
-                <div
-                  style={{
-                    padding: "20px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <ReactPlayer url={singleBlog.video} />
-                </div>
-                <div>
-                  <p
-                    style={{
-                      fontFamily: "Eina01-Regular",
-                      fontSize: "15px",
-                      padding: "4px",
-                      textAlign: "center",
-                    }}
-                  >
-                    {reactStringReplace(
-                      singleBlog.body,
-                      /(\^)/g,
-                      (match, i) => (
-                        <p key={i}>{match}</p>
-                      )
-                    )}
-                  </p>
-                </div>
-              </div>
+              <p
+                style={{
+                  fontFamily: "Eina01-Regular",
+                  fontSize: "15px",
+                  padding: "4px",
+                  textAlign: "center",
+                }}
+              >
+                {reactStringReplace(singleBlog.body,/(\^)/g,(match, i) => (<p key={i}>{match}</p>))}
+              </p>
             </Col>
           </Row>
         </Container>
