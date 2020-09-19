@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import NavBar from "./components/utilities/NavBar";
 
@@ -12,11 +12,13 @@ import SingleBlog from "./components/pages/blogs/Item";
 const AppRouter = () => (
   <div>
     <NavBar />
-    <Route exact path="/" component={Home} />
-    <Route exact path="/item/:blogId" component={SingleBlog} />
-    <Route exact path="/mission" component={Mission} />
-    <Route exact path="/codeofconduct" component={CodeOfConduct} />
-    <Route exact path="/connect" component={Connect} />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/item/:blogId" component={SingleBlog} />
+      <Route exact path="/mission" component={Mission} />
+      <Route exact path="/codeofconduct" component={CodeOfConduct} />
+      <Route exact path="/connect" component={Connect} />
+    </Switch>
   </div>
 );
 

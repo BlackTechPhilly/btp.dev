@@ -22,7 +22,6 @@ export class Blogs extends Component {
     axios.get("https://btpblog.herokuapp.com/tech-posts").then((response) => {
       const content = response.data;
       this.setState({ isLoading: false, techBlogs: content });
-      console.log(content);
     });
   }
   vbn;

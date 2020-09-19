@@ -39,32 +39,29 @@ class NavBar extends React.Component {
         <Navbar.Toggle areia-controls="basic-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className={style.links}>
-              <Link
-                to="/mission"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                Mission
-              </Link>
-            </Nav.Link>
+            <Link
+              to="/mission"
+              style={{ color: "white", textDecoration: "none" }}
+              className={style.links}
+            >
+              Mission
+            </Link>
 
-            <Nav.Link className={style.links}>
-              <Link
-                to="codeofconduct"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                Code of Conduct
-              </Link>
-            </Nav.Link>
+            <Link
+              to="codeofconduct"
+              style={{ color: "white", textDecoration: "none" }}
+              className={style.links}
+            >
+              Code of Conduct
+            </Link>
 
-            <Nav.Link className={style.links}>
-              <Link
-                to="connect"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                Connect
-              </Link>
-            </Nav.Link>
+            <Link
+              to="connect"
+              style={{ color: "white", textDecoration: "none" }}
+              className={style.links}
+            >
+              Connect
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

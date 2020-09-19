@@ -14,7 +14,7 @@ function setCol(words) {
 }
 const BlogItem = (props) => {
   const { blogs } = props;
-  console.log(blogs);
+
   return (
     <div>
       {blogs.map((blog) => {
