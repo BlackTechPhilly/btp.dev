@@ -7,9 +7,6 @@ import BlogItem from "./BlogItem";
 const BlogsLoading = LoadingBlog(BlogItem);
 
 export class Blogs extends Component {
-  state = {
-    techBlogs: [],
-  };
 
   state = {
     isLoading: false,
@@ -25,7 +22,7 @@ export class Blogs extends Component {
       console.log(content);
     });
   }
-  vbn;
+
   render() {
     return (
       <div>
