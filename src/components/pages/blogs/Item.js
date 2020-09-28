@@ -4,7 +4,7 @@ import { Jumbotron, Container, Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import reactStringReplace from "react-string-replace";
 import ReactPlayer from "react-player";
-
+import ReactMarkdown from "react-markdown";
 
 const Item = () => {
   const blog = useParams();
@@ -49,7 +49,7 @@ if ( 'video' || 'picture' in singleBlog === false ) {
                   textAlign: "center",
                 }}
               >
-                {reactStringReplace(singleBlog.body,/(\^)/g,(match, i) => (<p key={i}>{match}</p>))}
+                  <ReactMarkdown source={singleBlog.body}/>
               </p>
             </Col>
           </Row>
@@ -72,8 +72,8 @@ if ( 'video' || 'picture' in singleBlog === false ) {
         </div>
         <Row>
           <div id="vid">
-              <ReactPlayer url={singleBlog.video} /> 
-          </div>  
+              <ReactPlayer url={singleBlog.video} />
+          </div>
         </Row>
         <Row>
           <Col>
@@ -85,7 +85,7 @@ if ( 'video' || 'picture' in singleBlog === false ) {
                 textAlign: "center",
               }}
             >
-              {reactStringReplace(singleBlog.body,/(\^)/g,(match, i) => (<p key={i}>{match}</p>))}
+               <ReactMarkdown source={singleBlog.body}/>
             </p>
           </Col>
         </Row>
