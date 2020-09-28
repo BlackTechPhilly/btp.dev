@@ -23,11 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
-.idea/.gitignore
-.idea/btp.dev.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
+.idea
+.vscode
+
 
 # Local Netlify folder
 .netlify

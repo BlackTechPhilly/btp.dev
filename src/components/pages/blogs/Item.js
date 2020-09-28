@@ -4,7 +4,7 @@ import { Jumbotron, Container, Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import reactStringReplace from "react-string-replace";
 import ReactPlayer from "react-player";
-
+import ReactMarkdown from "react-markdown";
 const Item = () => {
   const blog = useParams();
   const blogId = blog.blogId;
@@ -58,13 +58,14 @@ const Item = () => {
                       textAlign: "center",
                     }}
                   >
-                    {reactStringReplace(
-                      singleBlog.body,
-                      /(\^)/g,
-                      (match, i) => (
-                        <p key={i}>{match}</p>
-                      )
-                    )}
+                    <ReactMarkdown source={singleBlog.body} />
+                    {/*{reactStringReplace(*/}
+                    {/*  singleBlog.body,*/}
+                    {/*  /(\^)/g,*/}
+                    {/*  (match, i) => (*/}
+                    {/*    <p key={i}>{match}</p>*/}
+                    {/*  )*/}
+                    {/*)}*/}
                   </p>
                 </div>
               </div>
