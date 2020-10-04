@@ -8,6 +8,7 @@ import Mission from "./components/pages/Mission";
 import CodeOfConduct from "./components/pages/CodeOfConduct";
 import Connect from "./components/pages/Connect";
 import SingleBlog from "./components/pages/blogs/Item";
+import About from "./components/pages/about/About"
 
 const AppRouter = () => (
   <div>
@@ -18,6 +19,7 @@ const AppRouter = () => (
     <Route exact path="/codeofconduct" component={CodeOfConduct} />
     <Route exact path="/connect" component={Connect} />
     <Route exact path="/single_blog/:blogId" render={() => <SingleBlog /> }/>
+    <Route exact path="/about" render={() => <About /> }/>
   </div>
 );
 

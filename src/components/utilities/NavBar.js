@@ -50,10 +50,19 @@ class NavBar extends React.Component {
 
             <Nav.Link className={style.links}>
               <Link
-                to="codeofconduct"
+                to="/codeofconduct"
                 style={{ color: "white", textDecoration: "none" }}
               >
                 Code of Conduct
+              </Link>
+            </Nav.Link>
+
+            <Nav.Link className={style.links}>
+              <Link
+                to="/about"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                About/Bios
               </Link>
             </Nav.Link>
 
