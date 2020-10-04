@@ -62,7 +62,7 @@ class NavBar extends React.Component {
                 to="/about"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                About/Bios
+                BTP Team
               </Link>
             </Nav.Link>
 
