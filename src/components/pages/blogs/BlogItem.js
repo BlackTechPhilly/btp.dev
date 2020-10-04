@@ -12,12 +12,13 @@ function setCol(words) {
     </div>
   );
 }
+
 const BlogItem = (props) => {
   const { blogs } = props;
 
   return (
     <div>
-      {blogs.map((blog) => {
+      {blogs.reverse().map((blog) => {
         return (
           <div>
             <Container>
