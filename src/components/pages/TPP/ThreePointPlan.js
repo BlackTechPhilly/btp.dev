@@ -7,10 +7,7 @@ import Support from "./Support";
 import Purpose from "./Purpose";
 
 export class TPP extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+  
   render() {
     return (
       <div>
