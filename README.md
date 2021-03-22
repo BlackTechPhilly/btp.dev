@@ -1,7 +1,7 @@
 <!-- <img src = "/client/src/components/assets/images/btp.png"
 width ="200" height="200" alt= "Black Tech Philly Logo.png"> -->
 
-<img src = "/src/components/assets/images/btp.png" 
+<img src = "/src/public/transparent_BTP_Logo_color.png" 
 width ="200" height="200" alt= "Black Tech Philly Logo.png">
 
 # Black Tech Philly
