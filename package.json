@@ -13,7 +13,6 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
     "browserslist": "^4.16.3",
-    "caniuse-lite": "^1.0.30001187",
     "isomorphic-fetch": "^3.0.0",
     "moment": "^2.29.1",
     "next": "10.0.4",
