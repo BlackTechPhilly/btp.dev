@@ -1,7 +1,8 @@
-<img src="/src/components/assets/images/btp.png" 
-width ="200" height="200" alt= "BlackTechPhillyLogo.png">
+<!-- <img src = "/client/src/components/assets/images/btp.png"
+width ="200" height="200" alt= "Black Tech Philly Logo.png"> -->
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3d03da3e-6b1e-4da1-8462-013438890af0/deploy-status)](https://app.netlify.com/sites/blacktechphilly/deploys)
+<img src = "/src/public/transparent_BTP_Logo_color.png" 
+width ="200" height="200" alt= "Black Tech Philly Logo.png">
 
 # Black Tech Philly
 
@@ -17,7 +18,7 @@ Black Tech Philly is a predominantly virtual, inclusive space where Black tech p
 6. License
 7. File Size
 
-## Installation and Setup
+## Installation
 
 In the project directory, use the following commands to run application:
 
@@ -29,32 +30,17 @@ To run interactive watch mode, run: **npm test**
 
 To prepare application for production, run: **npm run build**
 
-## Technology
-
-This application uses React, Node.js, MongoDB, and Docker.
-
 ## Usage
 
-## Features
-
-- Events Calendar: Our events calendar is built using the Google Calendar as our CMS system, which allows us to
-  conveniently schedule events from one account.
-
-- Blog: Our blog is built using Strapi.js as our CMS.
-
-## Todos
-
-- Build fullfledge Calendar CMS. Our current Calendar is sufficent for the interim but ideally, we would like to have the capability to have a backlog of our events present on our site to show users the history of the things we do. Our current system does not allow for this.
-
-- Comment section for blog: We would like to add the functionality to allow visitors to comment on posts.
-
-## Contribute
+## Contribution
 
 ## Credits
 
-- Ian Kimble - MERN Stack Developer - https://github.com/Iankimble
-- Ryan Small - Java Developer - https://github.com/rjsmall90
-- Khalil Saboor - Java Developer - https://github.com/Ksaboor
+Ian Kimble -
+
+Ryan Small -
+
+Khalil Saboor -
 
 ## License
 

@@ -1,0 +1,31 @@
+Layout
+- Search for blog post logic
+- Import Fonts 
+
+Navigation Bar
+- Import logo and tagline
+- Animations for links
+
+Home Page
+- Animations for buttons that link to pages 
+
+Blog 
+- Logic to display single blog posts
+
+Contact Us
+- Copy for each form type
+- form validation logic
+
+About
+- Copy for mission
+- Bios for leadership
+- Copy for members, community, and sponsors
+
+Subscribe
+- Form logic for subscription
+- Form validation
+- Confirmation/ Error logic for subscription submissison
+
+- Store
+
+- Donate

@@ -8,23 +8,37 @@
 # testing
 /coverage
 
+# next.js
+/.next/
+/out/
+next.config.js
+
 # production
 /build
 
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.pem
 
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
 .env
 .vscode
 .idea
 yarn.lock
 # Local Netlify folder
 .netlify
+=======
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+>>>>>>> 48602ac2c7eaf3115d764f0fd5c85de60125d350

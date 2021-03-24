@@ -1,7 +1,8 @@
 {
-  "name": "btp_site",
-  "version": "0.5.0",
+  "name": "client",
+  "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "dependencies": {
     "@popperjs/core": "^2.4.4",
     "@testing-library/jest-dom": "^4.2.4",
@@ -33,26 +34,32 @@
   "optionalDependencies": {
     "fsevents": "*"
   },
+=======
+>>>>>>> 48602ac2c7eaf3115d764f0fd5c85de60125d350
   "scripts": {
-    "start": "react-scripts start",
-    "build": "CI= react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "proxy": "http://localhost:7075",
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "autoprefixer": "^10.1.0",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "browserslist": "^4.16.3",
+    "caniuse-lite": "^1.0.30001187",
+    "isomorphic-fetch": "^3.0.0",
+    "moment": "^2.29.1",
+    "next": "10.0.4",
+    "postcss": "^8.2.1",
+    "react": "17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "17.0.1",
+    "react-icons": "^4.1.0",
+    "react-loading": "^2.0.3",
+    "react-reveal": "^1.2.2",
+    "react-spinners": "^0.10.6",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "^2.0.2"
   }
 }

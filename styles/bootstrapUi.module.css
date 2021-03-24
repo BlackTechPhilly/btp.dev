@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "DINCondensed-Bold";
+  src: local("DINCondensed-Bold"),
+    url("../fonts/DINCondensed-Bold\ \(1\).ttf") format("truetype");
+  /* url("../fonts/DINCondensed-Bold.ttf") format("truetype"); */
+}
+
+@font-face {
+  font-family: "Eina01-Regular";
+  src: local("Eina01-Regular"),
+    url("../fonts/Eina01-Regular\ \(1\).ttf") format("truetype");
+  /* url("../fonts/Eina01-Regular.ttf") format("truetype"); */
+}
+
+.landingImg {
+  background-image: url(https://ksassetstore.blob.core.windows.net/assests/thecity.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.jumbotrons {
+  background-color: transparent;
+}
+
+/*Navigation bar*/
+.nav {
+  background-color: #008be0;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.mainNav {
+  justify-content: center;
+}
+
+/*Navigation Links*/
+.brandLink {
+  text-align: center;
+  font-family: DINCondensed-Bold;
+}
+
+.brandLink a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navLinks a {
+  color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-decoration: none;
+  font-family: "Eina01-Regular";
+}
+
+/*Dark mode button*/
+.darkModeBtn {
+  background-color: black;
+  border-color: transparent;
+  margin: 5px;
+}
+
+.darkModeBtn a {
+  color: white;
+}
+
+.srchBtn {
+  background-color: #008be0;
+  border-color: transparent;
+  margin: 5px;
+}
+
+.cardStyle {
+  margin: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.homeCard {
+  background: linear-gradient(to bottom, #008be0, rgba(255, 0, 0, 0));
+  border: transparent;
+  margin: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.homeBlogCard {
+  background-color: #008be0;
+  border: transparent;
+  margin: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.footer {
+  border-top: 1px solid black;
+}
+
+.buttonStyle {
+  background-color: #008be0;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border: 10px;
+  border-color: #008be0;
+  transition: 0.3s;
+  font-size: 20px;
+  font-family: "Eina01-Regular";
+}
+
+.secondaryButton {
+  border: 2.5px solid #008be0;
+  background-color: transparent;
+}
+
+.buttonStyle:hover {
+  background-color: black;
+}
+
+.blogCard {
+  background: linear-gradient(to bottom, #008be0, rgba(255, 0, 0, 0));
+  height: 150px;
+  border: transparent;
+  margin: 20px;
+}
+
+.blogCard a {
+  color: "white";
+}
