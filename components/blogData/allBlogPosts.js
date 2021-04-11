@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Media, Card, Button } from "react-bootstrap";
 import style from "../../styles/bootstrapUi.module.css";
-import Fade from "react-reveal/fade";
+import Fade from "react-reveal/Fade";
 import axios from "axios";
 import Link from "next/link";
 import { css } from "@emotion/core";
@@ -23,7 +23,7 @@ export class AllBlogPosts extends Component {
 
   loadingData = () => (
   <div style={{textAlign:'center'}}>
-      <h1>Loading</h1>     
+      <h1>Loading</h1>
     </div>
   );
 
@@ -36,7 +36,7 @@ export class AllBlogPosts extends Component {
   }
 
   render() {
-  
+
     const override = css`
     display: block;
     margin: 0 auto;
@@ -75,7 +75,7 @@ export class AllBlogPosts extends Component {
               <br/>
             <BeatLoader
             css={override}
-            color={'#008be0'}  
+            color={'#008be0'}
             size={75}
             loading={this.state.loading}
             /></div>;
