@@ -1,15 +1,11 @@
 @font-face {
   font-family: "DINCondensed-Bold";
-  src: local("DINCondensed-Bold"),
-    url("../fonts/DINCondensed-Bold\ \(1\).ttf") format("truetype");
-  /* url("../fonts/DINCondensed-Bold.ttf") format("truetype"); */
+  src: url("../fonts/DINCondensed-Bold (1).ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Eina01-Regular";
-  src: local("Eina01-Regular"),
-    url("../fonts/Eina01-Regular\ \(1\).ttf") format("truetype");
-  /* url("../fonts/Eina01-Regular.ttf") format("truetype"); */
+  src: url("../fonts/Eina01-Regular (1).ttf") format("truetype");
 }
 
 .landingImg {
