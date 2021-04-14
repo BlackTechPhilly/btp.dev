@@ -11,7 +11,7 @@ export default function About() {
       <Fade top>
         <Container style={{ textAlign: "center",fontFamily: "DINCondensed-Bold"  }}>
           <h1>About BTP</h1>
- 
+
         </Container>
 
         <Container style={{ textAlign: "center" }}>
@@ -24,7 +24,7 @@ export default function About() {
               display: "inline-block",
             }}
           >
-            <Image
+            <img
               variant="top"
               src="/ian_profile_img.png"
               height="350px"
@@ -103,7 +103,7 @@ export default function About() {
           <Row>
             <Col>
               <h3 style={{fontFamily: "DINCondensed-Bold" }}>Breaking the Code To serve our Members</h3>
-          
+
               <p style={{fontFamily: "Eina01-Regular" }}>
               BTP is an inclusive space for Black tech professionals to network and build bonds, but we’re also a welcoming community for tech professionals of all colors, creeds, sexual orientation, gender identification and levels of career experience. No code switching necessary here- Just code.
               </p>
@@ -111,10 +111,10 @@ export default function About() {
               BTP is a program dedicated to solidarity through learning. We strive to help our members reach their career goals as tech professionals through mentoring, tutoring, and career oriented programming, as well as provide real world experience via coding projects.
               </p>
       <p style={{fontFamily: "Eina01-Regular"}}>
-        
+
 {/* BTP’s primary mission is to get more Black people into professional tech roles. With our web development projects and related programming we aim to provide our members with the opportunity to not only reinforce their portfolios with robust projects and experience but help them land employment opportunities through our relationships with employers across the city and surrounding areas. */}
       </p>
-              
+
             </Col>
             <Col></Col>
           </Row>
@@ -128,11 +128,11 @@ export default function About() {
             <Col></Col>
             <Col>
               <h3 style={{fontFamily: "DINCondensed-Bold" }}>Connecting the Community To serve our city</h3>
-            
+
               <p style={{fontFamily: "Eina01-Regular"}}>
                 We believe the foundation of successful community infastructure is preparation and education.
-                Black Tech Philly aims to provide educational resources to those seeking to learn more about technology to achieve their non-technological goals;  
-                More specifically, providing entrepreneurs and local businesses with guidance on web technologies and practices as well as starting discussions with communities to demistify certain preconceived notions about technology and the ethics of certain technologies and how they impact our neighborhoods. 
+                Black Tech Philly aims to provide educational resources to those seeking to learn more about technology to achieve their non-technological goals;
+                More specifically, providing entrepreneurs and local businesses with guidance on web technologies and practices as well as starting discussions with communities to demistify certain preconceived notions about technology and the ethics of certain technologies and how they impact our neighborhoods.
               </p>
             </Col>
           </Row>
@@ -145,9 +145,9 @@ export default function About() {
           <Row>
             <Col>
               <h3 style={{fontFamily: "DINCondensed-Bold" }}>Building Together with our Sponsors</h3>
-              
+
               <p style={{fontFamily: "Eina01-Regular"}}>
-                In conjunction with our community and local leaders we look to build relationships with tech conmpanies across the city to help promote our mission to uplift our communities. 
+                In conjunction with our community and local leaders we look to build relationships with tech conmpanies across the city to help promote our mission to uplift our communities.
               </p>
               <p>To learn more, please reach out to us via email at <a href="blacktechphilly@gmail.com">blacktechphilly@gmail.com</a></p>
             </Col>
