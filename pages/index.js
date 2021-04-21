@@ -22,12 +22,12 @@ export default function Home() {
 					>
 						<Container>
 							<h1 style={{ fontSize: '150px', fontFamily: 'DINCondensed-Bold' }}>Black Tech Philly</h1>
-							<Image
+							{/* <Image
 								variant="top"
 								src={require('/transparent_BTP_Logo_color.png')}
 								height="400px"
 								width="400px"
-							/>
+							/> */}
 							<h3 style={{ fontSize: '50px', fontFamily: 'Eina01-Regular' }}>
 								<i>"No code switching, just code"</i>
 							</h3>

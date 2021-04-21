@@ -9,14 +9,14 @@ const NavigationBar = () => {
 	return (
 		<div>
 			<Navbar expand="lg" className={style.nav}>
-				<Image
+				{/* <Image
 					width={70}
 					height={70}
 					className=""
 					src={require('/White_transparent_BTP_Logo.png')}
 					alt="BTP logo"
 					style={{ margin: '5px' }}
-				/>
+				/> */}
 				<Navbar.Brand bsPrefix={style.brandLink}>
 					<Link href="/">Black Tech Philly</Link>
 					<br />
