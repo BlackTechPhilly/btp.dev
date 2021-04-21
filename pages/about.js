@@ -23,7 +23,7 @@ export default function About() {
 							display: 'inline-block'
 						}}
 					>
-						<img
+						{/* <img
 							variant="top"
 							src={require('/ian_profile_img.png')}
 							height="350px"
@@ -31,7 +31,7 @@ export default function About() {
 							style={{
 								margin: '15px'
 							}}
-						/>
+						/> */}
 						<Card.Body>
 							<Card.Title style={{ fontFamily: 'DINCondensed-Bold' }}>Ian Kimble | (He, Him)</Card.Title>
 							<Card.Text>Co-Founder | Executive Director</Card.Text>
@@ -45,7 +45,7 @@ export default function About() {
 							display: 'inline-block'
 						}}
 					>
-						<Image
+						{/* <Image
 							variant="top"
 							src={(require = '/khalil_profile_img.png')}
 							height="350px"
@@ -53,7 +53,7 @@ export default function About() {
 							style={{
 								margin: '15px'
 							}}
-						/>
+						/> */}
 						<Card.Body>
 							<Card.Title style={{ fontFamily: 'DINCondensed-Bold' }}>
 								Khalil Saboor | (He, Him)
@@ -69,7 +69,7 @@ export default function About() {
 							display: 'inline-block'
 						}}
 					>
-						<Image
+						{/* <Image
 							variant="top"
 							src={require('/ryan_profile_img.png')}
 							height="350px"
@@ -77,7 +77,7 @@ export default function About() {
 							style={{
 								margin: '15px'
 							}}
-						/>
+						/> */}
 						<Card.Body>
 							<Card.Title style={{ fontFamily: 'DINCondensed-Bold' }}>Ryan Small | (He, Him)</Card.Title>
 							<Card.Text>Co-Founder | | Secretary </Card.Text>
