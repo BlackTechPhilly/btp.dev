@@ -18,20 +18,20 @@ export default function About() {
 					<Card
 						className={style.homeCard}
 						style={{
-							height: '600px',
+							height: '500px',
 							width: '350px',
 							display: 'inline-block'
 						}}
 					>
-						{/* <img
+						<Image
 							variant="top"
-							src={require('/ian_profile_img.png')}
+							src="/ian_profile_img.png"
 							height="350px"
 							width="350px"
 							style={{
 								margin: '15px'
 							}}
-						/> */}
+						/>
 						<Card.Body>
 							<Card.Title style={{ fontFamily: 'DINCondensed-Bold' }}>Ian Kimble | (He, Him)</Card.Title>
 							<Card.Text>Co-Founder | Executive Director</Card.Text>
@@ -40,20 +40,20 @@ export default function About() {
 					<Card
 						className={style.homeCard}
 						style={{
-							height: '600px',
+							height: '500px',
 							width: '350px',
 							display: 'inline-block'
 						}}
 					>
-						{/* <Image
+						<Image
 							variant="top"
-							src={(require = '/khalil_profile_img.png')}
+							src="/khalil_profile_img.png"
 							height="350px"
 							width="350px"
 							style={{
 								margin: '15px'
 							}}
-						/> */}
+						/>
 						<Card.Body>
 							<Card.Title style={{ fontFamily: 'DINCondensed-Bold' }}>
 								Khalil Saboor | (He, Him)
@@ -64,20 +64,20 @@ export default function About() {
 					<Card
 						className={style.homeCard}
 						style={{
-							height: '600px',
+							height: '500px',
 							width: '350px',
 							display: 'inline-block'
 						}}
 					>
-						{/* <Image
+						<Image
 							variant="top"
-							src={require('/ryan_profile_img.png')}
+							src="/ryan_profile_img.png"
 							height="350px"
 							width="350px"
 							style={{
 								margin: '15px'
 							}}
-						/> */}
+						/>
 						<Card.Body>
 							<Card.Title style={{ fontFamily: 'DINCondensed-Bold' }}>Ryan Small | (He, Him)</Card.Title>
 							<Card.Text>Co-Founder | | Secretary </Card.Text>
