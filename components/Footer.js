@@ -15,7 +15,7 @@ const Footer = () => {
                 display: "block",
               }}
             >
-              <Nav.Item style={{ display: "inline-block" }}>
+              {/* <Nav.Item style={{ display: "inline-block" }}>
                 <Nav.Link href="">
                   Twitter
                   <FaTwitter
@@ -66,7 +66,7 @@ const Footer = () => {
                     }}
                   />
                 </Nav.Link>
-              </Nav.Item>
+              </Nav.Item> */}
               <Nav.Item style={{ display: "inline-block" }}>
                 <Nav.Link disabled>Black Tech Philly &copy; 2020</Nav.Link>
               </Nav.Item>

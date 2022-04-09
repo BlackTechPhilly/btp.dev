@@ -42,11 +42,14 @@ const NavigationBar = () => {
         <Navbar.Toggle />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav className={style.navLinks}>
+            {/* <Nav className={style.navLinks}>
               <Link href="/blog">Blog</Link>
-            </Nav>
+            </Nav> */}
             <Nav className={style.navLinks}>
               <Link href="/about">About</Link>
+            </Nav>
+            <Nav className={style.navLinks}>
+              <Link href="/about">Resources</Link>
             </Nav>
             <Nav className={style.navLinks}>
               <Link href="/contact">Contact</Link>
