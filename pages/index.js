@@ -1,48 +1,53 @@
-import { Jumbotron, Container, Button, Card, Col, Row } from 'react-bootstrap';
+import { Jumbotron, Container, Button, Card, Col, Row } from "react-bootstrap";
 
-import style from '../styles/bootstrapUi.module.css';
-import Fade from 'react-reveal/Fade';
+import style from "../styles/bootstrapUi.module.css";
+import Fade from "react-reveal/Fade";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from 'next/link'
 
 export default function Home() {
-	return (
-		<div>
-			<div>
-				<Fade bottom>
-					<Jumbotron
-						fluid
-						style={{
-							textAlign: 'center',
-							height: 'auto',
-							backgroundColor: 'transparent'
-						}}
-						// className={style.landingImg}
-					>
-						<Container>
-							<h1 style={{ fontSize: '150px', fontFamily: 'DINCondensed-Bold' }}>Black Tech Philly</h1>
-							{/* <Image
-								variant="top"
-								src={require('/transparent_BTP_Logo_color.png')}
-								height="400px"
-								width="400px"
-							/> */}
-							<h3 style={{ fontSize: '50px', fontFamily: 'Eina01-Regular' }}>
-								<i>"No code switching, just code"</i>
-							</h3>
-							<p style={{ fontSize: '20px', fontFamily: 'Eina01-Regular' }}>
-								Philadelphia's Virtual Community for Black Tech Professionals
-							</p>
-							<Button className={style.buttonStyle}>Learn More</Button>
-						</Container>
-					</Jumbotron>
-				</Fade>
-			</div>
+  return (
+    <div>
+      <div>
+        <Fade bottom>
+          <Jumbotron
+            fluid
+            style={{
+              textAlign: "center",
+              height: "auto",
+              backgroundColor: "transparent",
+            }}
+            // className={style.landingImg}
+          >
+            <Container>
 
-			{/* <hr /> */}
-			{/*blog cards*/}
-			{/* <Fade bottom>
+              <h1
+                style={{ fontSize: "150px", fontFamily: "DINCondensed-Bold" }}
+              >
+                Black Tech Philly
+              </h1>
+              <Image
+                variant="top"
+                src="/transparent_BTP_Logo_color.png"
+                height="400px"
+                width="400px"
+              />
+              <h3 style={{ fontSize: "50px", fontFamily: "Eina01-Regular" }}>
+                <i>"No code switching, just code"</i>
+              </h3>
+              <p style={{ fontSize: "20px", fontFamily: "Eina01-Regular" }}>
+                Philadelphia's Virtual Community for Black Tech Professionals
+              </p>
+              <Button className={style.buttonStyle}>Learn More</Button>
+            </Container>
+          </Jumbotron>
+        </Fade>
+      </div>
+
+      {/* <hr /> */}
+      {/*blog cards*/}
+      {/* <Fade bottom>
         <Jumbotron fluid className={style.jumbotrons}>
           <Container style={{ textAlign: "center" }}>
             <h1 style={{ fontFamily: "DINCondensed-Bold", fontSize: "75px" }}>
@@ -102,40 +107,42 @@ export default function Home() {
           </Container>
         </Jumbotron>
       </Fade> */}
-			<hr />
-			{/*call to action for members*/}
+      <hr />
+      {/*call to action for members*/}
 
-			<Fade Bottom>
-				<Jumbotron fluid className={style.jumbotrons}>
-					<Container style={{ textAlign: 'center' }}>
-						<h1 style={{ fontFamily: 'DINCondensed-Bold', fontSize: '75px' }}>For our Members</h1>
-						<p>
-							Black Tech Philly is a virtual inclusive space for black tech professionals of all career
-							levels and disciplines to connect. Follow the link below to learn more.
-						</p>
-						<Link href="/about">
-							<Button className={style.buttonStyle}>Learn More</Button>
-						</Link>
-					</Container>
-				</Jumbotron>
-				<hr />
-				{/*call to action for communitt*/}
+      <Fade Bottom>
+        <Jumbotron fluid className={style.jumbotrons}>
+          <Container style={{ textAlign: "center" }}>
+            <h1 style={{ fontFamily: "DINCondensed-Bold", fontSize: "75px" }}>
+              For our Members
+            </h1>
+            <p>
+              Black Tech Philly is a virtual inclusive space for black tech professionals of all career levels and disciplines to connect. Follow the link below to learn more.
+            </p>
+            <Link href='/about'>
+            <Button className={style.buttonStyle}>Learn More</Button>
+            </Link>
+          </Container>
+        </Jumbotron>
+        <hr />
+        {/*call to action for communitt*/}
 
-				<Jumbotron fluid className={style.jumbotrons}>
-					<Container style={{ textAlign: 'center' }}>
-						<h1 style={{ fontFamily: 'DINCondensed-Bold', fontSize: '75px' }}>For the community</h1>
-						<p>
-							A main component to our mission is to uplift our community by demistifiying preconcieved
-							ideas about technology. Follow the link below to learn more.
-						</p>
-						<Link href="/about">
-							<Button className={style.buttonStyle}>Learn More</Button>
-						</Link>
-					</Container>
-				</Jumbotron>
-				<hr />
-				{/*call to action for sponsors*/}
-				{/* <Jumbotron fluid className={style.jumbotrons}>
+        <Jumbotron fluid className={style.jumbotrons}>
+          <Container style={{ textAlign: "center" }}>
+            <h1 style={{ fontFamily: "DINCondensed-Bold", fontSize: "75px" }}>
+              For the community
+            </h1>
+            <p>
+              A main component to our mission is to uplift our community by demistifiying preconcieved ideas about technology. Follow the link below to learn more.
+            </p>
+            <Link href='/about'>
+            <Button className={style.buttonStyle}>Learn More</Button>
+            </Link>
+          </Container>
+        </Jumbotron>
+        <hr />
+        {/*call to action for sponsors*/}
+        {/* <Jumbotron fluid className={style.jumbotrons}>
           <Container style={{ textAlign: "center" }}>
             <h1 style={{ fontFamily: "DINCondensed-Bold", fontSize: "75px" }}>
               Our Sponsors
@@ -158,7 +165,7 @@ export default function Home() {
             </p>
           </Container>
         </Jumbotron> */}
-			</Fade>
-		</div>
-	);
+      </Fade>
+    </div>
+  );
 }

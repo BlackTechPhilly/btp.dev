@@ -1,6 +1,7 @@
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
-import style from "../styles/bootstrapUi.module.css";
+import { GlobalStyles } from "../styles/global";
+import style from "../styles/bootstrapUI.module.css";
 
 const Layout = ({ children }) => {
   return (
