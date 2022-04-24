@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 <img src = "/src/components/assets/images/btp.png" 
-=======
-<!-- <img src = "/client/src/components/assets/images/btp.png"
-width ="200" height="200" alt= "Black Tech Philly Logo.png"> -->
-
-<img src = "/src/public/transparent_BTP_Logo_color.png" 
->>>>>>> 22df3ee7c76ce5547b44b1c958858db7d5c373b4
 width ="200" height="200" alt= "Black Tech Philly Logo.png">
 
 # Black Tech Philly
