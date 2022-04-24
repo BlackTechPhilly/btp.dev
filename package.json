@@ -26,6 +26,7 @@
     "react-string-replace": "^0.4.4",
     "react-virtuoso": "^0.20.0",
     "rnpm": "^1.9.0",
+    "sharp": "^0.30.4",
     "style-it": "^2.1.4",
     "superagent": "^5.3.1",
     "typescript": "^3.9.7"
