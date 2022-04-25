@@ -31,7 +31,7 @@ module.exports = {
 module.exports = {
 	BTP_BLOG: 'https://btpblog.herokuapp.com/tech-posts',
 	future: {
-		webpack5: true
+		webpack5: false
 	},
 	SENDGRID: ''
 };
@@ -40,3 +40,4 @@ module.exports = {
 	// Target must be serverless
 	target: 'serverless'
 };
+
